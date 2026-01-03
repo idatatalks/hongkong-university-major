@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HKUST｜Engineering with Extended Major in Artificial Intelligence｜十一项详解（单列版）</title>
+  <style>
+:root{
+  --brand:#0b6fb8;
+  --brand2:#1a8fd6;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --text:#1f2a37;
+  --muted:#6b7280;
+  --border:#e6edf6;
+  --shadow:0 10px 25px rgba(15, 23, 42, 0.06);
+  --radius:16px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:28px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text);
+}
+a{color:var(--brand); text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:980px; margin:0 auto}
+header{
+  background:linear-gradient(90deg,var(--brand),var(--brand2));
+  color:#fff; border-radius:20px; padding:22px 22px 18px 22px;
+  box-shadow:var(--shadow);
+}
+h1{margin:0; font-size:22px; letter-spacing:.2px}
+.subtitle{margin-top:8px; font-size:13px; opacity:.95; line-height:1.55}
+.badges{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+.badge{
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.24);
+  padding:6px 10px; border-radius:999px;
+  font-size:12px;
+  backdrop-filter: blur(6px);
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:18px 18px 16px 18px;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+  margin-top:14px;
+}
+.card h2{
+  margin:0 0 10px 0;
+  font-size:16px;
+  display:flex; align-items:center; gap:10px;
+}
+.num{
+  width:28px; height:28px; border-radius:10px;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:#eaf4ff; color:var(--brand); font-weight:700;
+  border:1px solid #d9ecff;
+  flex:0 0 auto;
+}
+.p{margin:0; color:var(--text); line-height:1.75; font-size:13.5px}
+ul{margin:10px 0 0 18px; padding:0; color:var(--text); line-height:1.75; font-size:13.5px}
+li{margin:6px 0}
+.muted{color:var(--muted)}
+.mini{
+  background:#fbfdff;
+  border:1px dashed #dfeaf6;
+  border-radius:14px;
+  padding:12px 12px 10px 12px;
+  margin-top:10px;
+}
+.mini h3{margin:0 0 6px 0; font-size:13.5px}
+.mini p{margin:0; font-size:13px; line-height:1.7; color:var(--text)}
+.callout{
+  border-left:4px solid var(--brand);
+  background:#f2f8ff;
+  border-radius:12px;
+  padding:10px 12px;
+  margin-top:10px;
+  font-size:13px; line-height:1.7;
+}
+.table{
+  width:100%; border-collapse:separate; border-spacing:0;
+  margin-top:10px; font-size:13px;
+  overflow:hidden; border-radius:14px;
+  border:1px solid var(--border);
+}
+.table th, .table td{
+  padding:10px 10px; vertical-align:top; line-height:1.6;
+  border-bottom:1px solid var(--border);
+}
+.table th{background:#f8fbff; text-align:left; color:#334155; font-weight:700}
+.table tr:last-child td{border-bottom:none}
+footer{
+  margin-top:16px; padding:14px 16px;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background:#ffffff;
+  color:var(--muted);
+  font-size:12px; line-height:1.65;
+}
+.one-liner{
+  font-size:15px; font-weight:800; color:#0f172a;
+  background:linear-gradient(90deg,#eaf4ff,#ffffff);
+  border:1px solid #d9ecff;
+  padding:12px 14px; border-radius:16px;
+}
+.smalltag{display:inline-block; font-size:12px; color:#0f172a; background:#eef6ff; border:1px solid #d9ecff; padding:4px 8px; border-radius:999px; margin-right:6px; margin-top:6px;}
+
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin:0 0 14px 0}
+.navbtn{display:inline-block;background:#eaf3ff;border:1px solid #d7e6ff;color:#0b6fb8;padding:10px 14px;border-radius:12px;
+font-size:15px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.navbtn:hover{text-decoration:underline}
+.navbtn.disabled{opacity:.55;cursor:not-allowed}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="navlinks"><a class="navbtn" href="../index.html">返回上一级</a><a class="navbtn" href="../../index.html">返回总目录</a></div><header>
+      <h1>香港科技大学（HKUST）｜Engineering with Extended Major in Artificial Intelligence（工学（主修工程 + AI延伸主修））——十一项详解</h1>
+      <div class="subtitle">把“工程主修（例如机械/电气/土木/化工/计算机等）”与“系统化 AI 课程链条”打包在一起：你既保留工程学科的硬底座，又能在高年级用机器学习/深度学习/生成式AI把工程问题做成可交付的智能系统（Major+AI）。</div>
+      <div class="badges"><div class="badge">主修工程 + AI延伸主修（Major+AI）</div>
+<div class="badge">工程落地：传感/控制/制造/基建/能源… + AI</div>
+<div class="badge">项目型学习：从数据到系统交付</div>
+<div class="badge">适合想做“工程×AI”复合型人才</div></div>
+    </header>
+    
+    <section class="card">
+      <h2><span class="num">1</span>该专业是什么</h2>
+      
+<p class="p"><b>Engineering with Extended Major in Artificial Intelligence（Major+AI）</b> 不是单独的“AI主修”，而是把一条<strong>结构化AI课程链</strong>叠加在你原本的工程主修上。你最终拿到的是 <b>BEng（原工程学科）with Extended Major in AI</b>，目标是培养能把AI真正落到制造、基建、能源、城市、机器人等工程场景的复合型工程师。</p><div class="callout">一句话：<b>你有一个工程主轴，再加一条AI深训练“副主轴”</b>——不是“会用AI工具”，而是“能把AI做进工程系统”。</div>
+
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">2</span>该专业学什么</h2>
+      
+<p class="p">你同时在学两套“核心语言”：</p><ul>
+  <li><b>工程主修语言</b>：你原本主修的机理、模型与工程约束（安全/可靠性/成本/合规）。</li>
+  <li><b>AI语言</b>：数据→模型→评估→部署→监控的完整链条（不止写模型，还要让模型在系统里稳定运行）。</li>
+  <li><b>交叉落地</b>：把工程问题改写成可学习/可优化的问题，并用实验/现场数据做验证。</li>
+</ul><div class="mini"><h3>你会学到的“差异化能力”</h3><p>把“准确率/损失”翻译成“工程指标”（误报成本、停机损失、安全边界、实时性、鲁棒性等），并做可落地的系统方案。</p></div>
+
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">3</span>该专业适合什么样的人</h2>
+      
+<ul>
+  <li><b>想走“行业AI”路线的人</b>：比起纯AI/纯CS，你更想在一个工程领域长期深耕，并用AI做跃迁。</li>
+  <li><b>喜欢把模型做进系统</b>：愿意处理数据、传感、部署、监控、与工程约束打架的现实问题。</li>
+  <li><b>能接受双修压力</b>：你要同时扛住工程主修与AI课程链，对时间管理与自驱要求更高。</li>
+  <li><b>喜欢跨学科协作</b>：工程团队、数据团队、现场团队沟通是日常。</li>
+</ul><div class="callout">如果你只想“学点AI当加分项”，而不想承受结构化要求，可能更适合做少量AI选修；如果你想把AI当主轴，可能更适合直接读 BEng in AI。</div>
+
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">4</span>该专业通常会做什么项目</h2>
+      <p class="p">不同专业的项目主题会不同，但项目形态大多落在以下四类（你越早开始做，成长越快）：</p><ul>
+  <li><b>课程项目：</b>用课程学到的模型/工具做小型可复现项目（仿真、设计计算、实验数据分析、原型搭建）。</li>
+  <li><b>团队设计项目：</b>围绕明确需求做指标定义、方案比较、迭代测试与最终展示。</li>
+  <li><b>研究/论文型项目（Thesis/Research Option）：</b>进入导师团队做更深入的问题，训练科研方法与写作汇报。</li>
+  <li><b>工业/合作项目（Industrial / Co-op）：</b>对接真实场景，强调交付质量、工程约束与沟通。</li>
+</ul><div class="mini"><h3>本专业常见项目主题（示例）</h3><p>制造/质量：视觉检测、缺陷分类、预测性维护（传感数据 → 预测模型 → 产线决策）； 基建/土木：结构健康监测、工地安全识别、BIM+AI 进度/风险预测； 能源/环境：负荷预测、能耗优化、碳排核算与减排策略模拟； 机器人/机电：感知融合、路径规划、强化学习控制、具身智能原型； 金融/运筹：需求预测、库存/调度优化、风险/欺诈检测（视你工程主修选课而定）</p></div>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">5</span>该专业需要掌握的主要技能</h2>
+      <table class="table"><tr><th>技能域</th><th>你要能做到什么（越往后越重要）</th></tr><tr><td><b>AI/数据底座</b></td><td>数据清洗、特征工程、训练/验证/评估、可解释性与偏差控制；至少掌握 Python 数据栈与基础统计。</td></tr><tr><td><b>工程系统思维</b></td><td>把“模型”嵌进系统：数据采集→存储→训练→部署→监控→迭代；理解实时性、可靠性与安全。</td></tr><tr><td><b>软件与工程化</b></td><td>版本控制、复现（环境/实验记录）、API/服务化、基本 MLOps 思维（即便不深也要会）。</td></tr><tr><td><b>领域知识</b></td><td>你所选工程主修的机理与约束（传感器、控制、材料、流程、结构、能量守恒…），决定你能做出多硬核的 AI 落地。</td></tr><tr><td><b>沟通交付</b></td><td>把“准确率”翻译成“业务指标”，并用原型/报告/演示说服团队。</td></tr></table><div class="callout">最快的提升方式：<b>把课程知识转成作品集</b>（项目/科研/实习），让能力“可展示、可验证”。</div>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">6</span>该专业需要学习哪些基础课</h2>
+      <p class="p">下面是该方向通常会遇到的“基础课底座”（不同学生/路径会有加速或替代）：</p><ul>
+  <li><b>工程数学（微积分/线代/概率统计）+ 编程（Python/C++/Java 其一）：</b>工程数学（微积分/线代/概率统计）+ 编程（Python/C++/Java 其一）</li>
+  <li><b>数据结构与算法（对AI系统规模化很关键）：</b>数据结构与算法（对AI系统规模化很关键）</li>
+  <li><b>机器学习/深度学习核心课（监督/无监督/表示学习）：</b>机器学习/深度学习核心课（监督/无监督/表示学习）</li>
+  <li><b>生成式AI与应用（提示工程只是起点，更重要是评估、对齐、检索增强与安全）：</b>生成式AI与应用（提示工程只是起点，更重要是评估、对齐、检索增强与安全）</li>
+  <li><b>工程主修核心课（你所在学科的必修链条）：</b>工程主修核心课（你所在学科的必修链条）</li>
+</ul><p class="p"><span class='muted'>提示：具体到“课程号/学分/先修”请以 ugadmin PDF 为准；我在页面底部放了官方链接。</span></p>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">7</span>该专业未来的就业岗位及薪酬范围及各岗位受AI影响的冲击</h2>
+      <p class="p">下面按“常见岗位 → 典型薪酬范围（香港，月薪，约） → AI 冲击点”来写，便于你直观看到：哪些岗位更容易被自动化、哪些岗位反而会因 AI 更值钱。</p><div class="callout"><b>薪酬说明：</b>为方便横向比较，这里以<strong>香港</strong>的“毕业~1-3年”常见区间做近似；具体会受行业（政府/咨询/金融/互联网/半导体/新能源）、公司体量、IANG/身份、项目经验、语言与证书等影响。</div><table class="table"><tr><th>岗位</th><th>薪酬范围（HK$/月，约）</th><th>AI 冲击/变化（你需要补上的能力）</th></tr><tr><td><b>行业 AI/机器学习工程师（工业/能源/基建）</b></td><td>HK$30k–55k</td><td>模型训练/特征工程会被自动化加速；更看重<b>数据管线、评测、部署、监控漂移</b>与把AI指标翻译成工程KPI。</td></tr><tr><td><b>数据科学/分析（工程场景）</b></td><td>HK$28k–50k</td><td>报表与基础分析被AI压缩；要往<b>因果/实验设计、优化决策、可解释与业务落地</b>走。</td></tr><tr><td><b>智能制造/预测性维护工程师</b></td><td>HK$25k–45k</td><td>单一模型更容易商品化；优势在<b>传感/机理+数据融合、现场验证、可靠性与成本权衡</b>。</td></tr><tr><td><b>数字孪生/仿真+AI 工程师</b></td><td>HK$30k–55k</td><td>仿真本身难被替代，但会被AI增强；要会<b>仿真建模、校准、与ML混合建模</b>。</td></tr><tr><td><b>AI 产品/技术项目（行业）</b></td><td>HK$28k–50k</td><td>写PRD/做汇报会更快；核心仍是<b>需求定义、ROI、风险与交付管理</b>。</td></tr></table><p class="p muted">提示：AI 更容易替代“可被标准化的文档/报表/代码片段/重复算图”，但很难替代“对现场与约束负责的工程判断、跨团队沟通、验收与合规责任”。</p>
+    </section>
+
+
+    
+
+
+    <section class="card">
+      <h2><span class="num">8</span>与相近方向对比</h2>
+      <p class="p">下面用“你更在意什么”来快速对比相近方向（帮助你选专业/选路线）：</p><table class="table"><tr><th>相近方向</th><th>关键差异（怎么选）</th></tr><tr><td><b>BEng in Artificial Intelligence</b></td><td>“AI 本体”更强：算法/理论/系统更密集；适合把 AI 当成主轴的人。Major+AI 更强调“你原工程主修领域的落地应用”。</td></tr><tr><td><b>BEng/BSc in Computer Science</b></td><td>CS 更偏通用计算/系统与软件工程；Major+AI 更偏“把 AI 嵌入到你的工程领域”。</td></tr><tr><td><b>只修几门 AI 选修</b></td><td>延伸主修的价值是“结构化课程链 + 共同语言 + 更完整作品集”，而不是零散选修。</td></tr></table>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">9</span>一句话总结</h2>
+      <div class='one-liner'>一句话总结：把“工程主修（例如机械/电气/土木/化工/计算机等）”与“系统化 AI 课程链条”打包在一起：你既保留工程学科的硬底座，又能在高年级用机器学习/深度学习/生成式AI把工程问题做成可交付的智能系统（Major+AI）。。</div><p class="p"><span class='muted'>如果你告诉我你更偏向“做产品/做科研/做管理/想去什么行业”，我可以在同模板下再给你写一份“选课+项目+实习”的四年路线图。</span></p>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">10</span>该专业四年课程设置</h2>
+      <p class="p">下面给出一份<strong>面向能力成长</strong>的“典型四年路径”（更接近你实际的学习体验）。不同同学会因：入学分流、荣誉/加速数学、交换、实习、研究选项而有所差异。</p><table class="table"><tr><th>学年</th><th>你在“练什么”</th><th>代表性课程类型（示例）</th><th>阶段性产出/项目</th></tr><tr><td><b>大一</b></td><td>把工程与AI的共同语言打稳：数学、编程、工程导论</td><td>微积分/线代/概率统计（或先修）＋ 编程与计算机导论＋工程导论</td><td>完成1-2个小型数据项目：从数据到可复现报告</td></tr><tr><td><b>大二</b></td><td>进入AI主干 + 工程主修核心：你开始能“做出可用模型”</td><td>机器学习入门/数据科学基础＋数据结构/算法＋工程主修核心课</td><td>课程项目：用ML解决一个工程数据问题（预测/分类/异常）</td></tr><tr><td><b>大三</b></td><td>系统化深化：深度学习/生成式AI + 领域应用选修</td><td>深度学习、计算机视觉/时序/图学习/强化学习（择）＋生成式AI相关课＋领域选修</td><td>团队项目：端到端系统（采集-训练-部署-评估）</td></tr><tr><td><b>大四</b></td><td>整合与作品集：Capstone/Thesis/Industrial Project</td><td>毕业设计/论文/工业项目 + 高级选修（含伦理/安全/合规）</td><td>可展示作品：demo/论文/技术报告；最好能有实习或科研成果</td></tr></table><div class="callout">做法建议：把每一年都至少产出<strong>1个可展示成果</strong>（项目/论文/竞赛/实习成果）。到申请研究生或找工作时，你会非常省力。</div>
+    </section>
+
+    <footer>
+      <b>信息来源（官方页面，便于你核对与追踪更新）：</b><br/>
+      1) ugadmin｜EXTM-AI 课程要求 PDF（2024-25）：<a href="https://ugadmin.hkust.edu.hk/prog_crs/ug/202425/pdf/24-25extm-ai.pdf" target="_blank" rel="noopener">https://ugadmin.hkust.edu.hk/prog_crs/ug/202425/pdf/24-25extm-ai.pdf</a><br/>
+2) HKUST EMIA｜Extended Major in AI（Major+AI）介绍：<a href="https://emia.hkust.edu.hk/extended-major-artificial-intelligence-majorai" target="_blank" rel="noopener">https://emia.hkust.edu.hk/extended-major-artificial-intelligence-majorai</a><br/>
+3) HKUST Program & Course Catalog（UG Programs）：<a href="https://prog-crs.hkust.edu.hk/ugprog" target="_blank" rel="noopener">https://prog-crs.hkust.edu.hk/ugprog</a><br/>
+      <span class="muted">注：课程编码/课程名会随学年微调；“四年课程设置”给的是<strong>按能力与课程类型组织的典型路径</strong>，你应以当年 HKUST Program & Course Catalog / ugadmin PDF 为准。</span>
+    <br/><br/>
+<b>薪酬参考（区间会随市场变化）：</b><br/>
+1) JobsDB｜Engineer salary（HK$25k–35k/月）：<a href="https://hk.jobsdb.com/career-advice/role/engineer/salary" target="_blank" rel="noopener">https://hk.jobsdb.com/career-advice/role/engineer/salary</a><br/>
+2) JobsDB｜Data Scientist salary（HK$34k–44k/月）：<a href="https://hk.jobsdb.com/career-advice/role/data-scientist/salary" target="_blank" rel="noopener">https://hk.jobsdb.com/career-advice/role/data-scientist/salary</a><br/>
+3) Indeed｜Software Engineer salary（香港，HK$26,709/月）：<a href="https://hk.indeed.com/career/software-engineer/salaries" target="_blank" rel="noopener">https://hk.indeed.com/career/software-engineer/salaries</a><br/>
+4) JobsDB｜Mechanical Engineer salary（HK$23k–31k/月）：<a href="https://hk.jobsdb.com/career-advice/role/mechanical-engineer/salary" target="_blank" rel="noopener">https://hk.jobsdb.com/career-advice/role/mechanical-engineer/salary</a><br/>
+5) Levels.fyi｜Entry Level Software Engineer（HK，总包）：<a href="https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/hong-kong-hkg" target="_blank" rel="noopener">https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/hong-kong-hkg</a>
+</footer>
+  </div>
+</body>
+</html>

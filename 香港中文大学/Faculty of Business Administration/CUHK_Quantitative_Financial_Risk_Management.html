@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CUHK｜Quantitative Financial Risk Management（量化金融风险管理）——十项详解</title>
+  <style>
+    :root{
+      --brand:#0b6fb8;
+      --brand2:#1a8fd6;
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --text:#1f2a37;
+      --muted:#6b7280;
+      --border:#e6edf6;
+      --shadow:0 10px 25px rgba(15, 23, 42, 0.06);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:28px;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+      background:var(--bg); color:var(--text);
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1050px; margin:0 auto}
+    header{
+      background:linear-gradient(90deg,var(--brand),var(--brand2));
+      color:#fff; border-radius:20px; padding:22px 22px 18px 22px;
+      box-shadow:var(--shadow);
+    }
+    h1{margin:0; font-size:22px; letter-spacing:.2px}
+    .subtitle{margin-top:8px; font-size:13px; opacity:.95; line-height:1.55}
+    .badges{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+    .badge{
+      background:rgba(255,255,255,.16);
+      border:1px solid rgba(255,255,255,.24);
+      padding:6px 10px; border-radius:999px;
+      font-size:12px;
+      backdrop-filter: blur(6px);
+    }
+
+    .grid{display:grid; gap:14px; margin-top:16px}
+    
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:18px 18px 16px 18px;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+    }
+    .card h2{
+      margin:0 0 10px 0;
+      font-size:16px;
+      display:flex; align-items:center; gap:10px;
+    }
+    .num{
+      width:28px; height:28px; border-radius:10px;
+      display:inline-flex; align-items:center; justify-content:center;
+      background:#eaf4ff; color:var(--brand); font-weight:700;
+      border:1px solid #d9ecff;
+      flex:0 0 auto;
+    }
+    .p{margin:0; color:var(--text); line-height:1.75; font-size:13.5px}
+    ul{margin:10px 0 0 18px; padding:0; color:var(--text); line-height:1.75; font-size:13.5px}
+    li{margin:6px 0}
+    .muted{color:var(--muted)}
+    .two-col{display:grid; gap:12px}
+    
+    .mini{
+      background:#fbfdff;
+      border:1px dashed #dfeaf6;
+      border-radius:14px;
+      padding:12px 12px 10px 12px;
+    }
+    .mini h3{margin:0 0 6px 0; font-size:13.5px}
+    .mini p{margin:0; font-size:13px; line-height:1.7; color:var(--text)}
+    .callout{
+      border-left:4px solid var(--brand);
+      background:#f2f8ff;
+      border-radius:12px;
+      padding:10px 12px;
+      margin-top:10px;
+      font-size:13px; line-height:1.7;
+    }
+    .table{
+      width:100%; border-collapse:separate; border-spacing:0;
+      margin-top:10px; font-size:13px;
+      overflow:hidden; border-radius:14px;
+      border:1px solid var(--border);
+    }
+    .table th, .table td{
+      padding:10px 10px; vertical-align:top; line-height:1.6;
+      border-bottom:1px solid var(--border);
+    }
+    .table th{background:#f8fbff; text-align:left; color:#334155; font-weight:700}
+    .table tr:last-child td{border-bottom:none}
+    footer{
+      margin-top:16px; padding:14px 16px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:#ffffff;
+      color:var(--muted);
+      font-size:12px; line-height:1.65;
+    }
+    .one-liner{
+      font-size:15px; font-weight:800; color:#0f172a;
+      background:linear-gradient(90deg,#eaf4ff,#ffffff);
+      border:1px solid #d9ecff;
+      padding:12px 14px; border-radius:16px;
+    }
+  
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin:0 0 14px 0}
+.navbtn{display:inline-block;background:#eaf3ff;border:1px solid #d7e6ff;color:#0b6fb8;padding:10px 14px;border-radius:12px;
+font-size:15px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.navbtn:hover{text-decoration:underline}
+.navbtn.disabled{opacity:.55;cursor:not-allowed}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    
+    <div class="navlinks"><a class="navbtn" href="../index.html">返回上一级</a><a class="navbtn" href="../../index.html">返回总目录</a></div><header>
+      <h1>香港中文大学（CUHK）｜Quantitative Financial Risk Management（量化金融风险管理）——十项详解</h1>
+      <div class="subtitle">用模型与数据把风险说清楚：市场/信用/流动性/操作风险的度量、情景与压力测试、模型治理与合规，是金融机构必需的“安全系统”。</div>
+      <div class="lead">香港中文大学（CUHK）｜相关专业详解（以官方最新归属为准）</div>
+      <div class="badges"><div class="badge">风险度量</div>
+<div class="badge">时间序列/统计</div>
+<div class="badge">压力测试</div>
+<div class="badge">模型治理与合规</div></div>
+    </header>
+    
+    <main>
+      
+      <section class="card">
+        <h2><span class="num">1</span>该专业是什么</h2>
+        <ul class="ul">
+<li>量化金融风险管理聚焦“如何量化并控制风险”：不是为了赚得更多，而是为了亏得更少、活得更久。</li>
+<li>它在银行、券商、资管与监管框架中都非常关键。</li>
+<li>核心输出常是：风险指标、情景分析、模型验证与治理建议。</li>
+</ul><div class="callout">如果你想走更稳健、更制度化的金融路径（而不是纯交易），风险管理是非常现实的选择。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">2</span>该专业学什么</h2>
+        <ul class="ul">
+<li>市场风险：VaR/ES、波动率模型、风险因子分解。</li>
+<li>信用风险：违约概率、损失率、评级迁移与组合信用风险。</li>
+<li>流动性风险：资金缺口、期限错配、压力情景。</li>
+<li>压力测试与情景分析：宏观冲击下的损失推演。</li>
+<li>模型风险管理：验证、回测、稳健性与监管要求。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">3</span>该专业适合什么样的人</h2>
+        <ul class="ul">
+<li><b>适合</b>：喜欢严谨与制度、愿意做验证与把关；对数据与模型有耐心。</li>
+<li><b>更适合（加分）</b>：沟通能力好（能向非技术同事解释风险）；有合规意识。</li>
+<li><b>不太适合</b>：只追求快节奏交易刺激，不愿做文档与治理。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">4</span>该专业通常会做什么项目</h2>
+        <ul class="ul">
+<li>构建VaR/ES模型并回测（违背率分析）。</li>
+<li>信用评分/PD模型：特征工程、验证与稳定性检查。</li>
+<li>压力测试：设定宏观情景→映射资产→估算损失与资本需求。</li>
+<li>模型治理项目：写模型文档、审计追踪、改进建议。</li>
+<li>风险仪表盘：用BI展示风险暴露与预警。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">5</span>该专业需要掌握的主要技能</h2>
+        <ul class="ul">
+<li>统计与时间序列、回归与验证方法。</li>
+<li>风险框架理解：风险类型、资本与监管逻辑。</li>
+<li>编程与数据处理：Python/R、SQL、可视化。</li>
+<li>模型治理：可解释性、文档化、审计可追溯。</li>
+<li>沟通：把风险结论转成“可行动的控制措施”。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">6</span>该专业需要学习哪些基础课</h2>
+        <ul class="ul">
+<li>概率统计、计量/时间序列</li>
+<li>金融基础（投资/衍生品/公司金融）</li>
+<li>风险管理导论、监管与合规基础</li>
+<li>编程与数据分析（Python/SQL）</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">7</span>该专业未来的就业岗位及薪酬范围及各岗位受AI影响的冲击</h2>
+        <ul class="ul">
+<li><b>银行/券商风险部门</b>：市场/信用风险分析（约 HK$30k–85k/月起）；AI影响：报表与建模自动化→更看重“模型治理、解释与监管沟通”。</li>
+<li><b>模型风险管理</b>：Model Validation/Model Risk（约 HK$35k–100k/月起）；AI影响：自动建模普及→更看重“审查、稳健性与责任”。</li>
+<li><b>资管风控</b>：组合风险、流动性管理（约 HK$35k–95k/月起）；AI影响：风险监控自动化→更看重“策略与情景设计”。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">8</span>与相近方向对比（表格版）</h2>
+        
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>对比方向</th><th>核心差异</th><th>更适合的目标</th><th>课程/技能侧重</th><th>AI冲击点</th></tr></thead>
+        <tbody>
+          <tr><td>Quantitative Finance</td><td>QF偏盈利与策略；QFRM偏控制与治理</td><td>想做交易/策略 vs 想做风控/治理</td><td>QF：回测/定价；QFRM：验证/压力测试</td><td>两者都受AI影响大；QFRM更强调责任与审计</td></tr>
+<tr><td>Insurance/Actuarial</td><td>精算更寿险/负债久期；QFRM更偏市场与银行风险</td><td>想做保险精算 vs 银行/市场风险</td><td>精算：寿险模型；QFRM：市场/信用风险</td><td>精算自动化增加但监管强；QFRM工具强但责任强</td></tr>
+<tr><td>Finance</td><td>金融更广；QFRM更量化与合规</td><td>想更通用金融 vs 风险专精</td><td>QFRM：统计/模型；金融：估值/产品</td><td>金融文档自动化强；QFRM监控自动化强</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">9</span>一句话总结</h2>
+        <div class="callout">量化风险管理＝用模型与治理把金融风险“量化、解释、可控”，AI越强，责任与审计越重要。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">10</span>该专业四年课程设置（表格版）</h2>
+        
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Year</th><th>重点目标</th><th>代表性课程/训练</th><th>项目/实习建议</th></tr></thead>
+        <tbody>
+          <tr><td>Year 1</td><td>数学统计与金融入门</td><td>统计、经济学、金融基础</td><td>做VaR入门小练习；学习Python数据处理</td></tr>
+<tr><td>Year 2</td><td>风险核心工具</td><td>时间序列/计量、风险管理导论</td><td>完成风险仪表盘项目；申请银行风控实习</td></tr>
+<tr><td>Year 3</td><td>信用/压力测试/治理</td><td>信用风险、压力测试、模型验证</td><td>做PD模型与验证；参与模型文档化与审计</td></tr>
+<tr><td>Year 4</td><td>整合输出</td><td>Capstone（风险框架/模型治理）</td><td>用项目对齐岗位（Risk/Model Validation）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+      </section>
+    
+    </main>
+    
+    <footer>
+      <div class="footnote">
+        说明：本页为面向选专业的“理解型”整理（非官方课程手册）。具体课程名称、学分、入学与毕业要求、双学位/stream 细则与申请门槛，请以 CUHK 官方网页与最新课程手册为准。
+      </div>
+    </footer>
+    
+  </div>
+</body>
+</html>

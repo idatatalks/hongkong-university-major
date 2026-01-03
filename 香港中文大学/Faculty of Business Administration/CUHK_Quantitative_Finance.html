@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CUHK｜Quantitative Finance（量化金融）——十项详解</title>
+  <style>
+    :root{
+      --brand:#0b6fb8;
+      --brand2:#1a8fd6;
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --text:#1f2a37;
+      --muted:#6b7280;
+      --border:#e6edf6;
+      --shadow:0 10px 25px rgba(15, 23, 42, 0.06);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:28px;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+      background:var(--bg); color:var(--text);
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1050px; margin:0 auto}
+    header{
+      background:linear-gradient(90deg,var(--brand),var(--brand2));
+      color:#fff; border-radius:20px; padding:22px 22px 18px 22px;
+      box-shadow:var(--shadow);
+    }
+    h1{margin:0; font-size:22px; letter-spacing:.2px}
+    .subtitle{margin-top:8px; font-size:13px; opacity:.95; line-height:1.55}
+    .badges{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+    .badge{
+      background:rgba(255,255,255,.16);
+      border:1px solid rgba(255,255,255,.24);
+      padding:6px 10px; border-radius:999px;
+      font-size:12px;
+      backdrop-filter: blur(6px);
+    }
+
+    .grid{display:grid; gap:14px; margin-top:16px}
+    
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:18px 18px 16px 18px;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+    }
+    .card h2{
+      margin:0 0 10px 0;
+      font-size:16px;
+      display:flex; align-items:center; gap:10px;
+    }
+    .num{
+      width:28px; height:28px; border-radius:10px;
+      display:inline-flex; align-items:center; justify-content:center;
+      background:#eaf4ff; color:var(--brand); font-weight:700;
+      border:1px solid #d9ecff;
+      flex:0 0 auto;
+    }
+    .p{margin:0; color:var(--text); line-height:1.75; font-size:13.5px}
+    ul{margin:10px 0 0 18px; padding:0; color:var(--text); line-height:1.75; font-size:13.5px}
+    li{margin:6px 0}
+    .muted{color:var(--muted)}
+    .two-col{display:grid; gap:12px}
+    
+    .mini{
+      background:#fbfdff;
+      border:1px dashed #dfeaf6;
+      border-radius:14px;
+      padding:12px 12px 10px 12px;
+    }
+    .mini h3{margin:0 0 6px 0; font-size:13.5px}
+    .mini p{margin:0; font-size:13px; line-height:1.7; color:var(--text)}
+    .callout{
+      border-left:4px solid var(--brand);
+      background:#f2f8ff;
+      border-radius:12px;
+      padding:10px 12px;
+      margin-top:10px;
+      font-size:13px; line-height:1.7;
+    }
+    .table{
+      width:100%; border-collapse:separate; border-spacing:0;
+      margin-top:10px; font-size:13px;
+      overflow:hidden; border-radius:14px;
+      border:1px solid var(--border);
+    }
+    .table th, .table td{
+      padding:10px 10px; vertical-align:top; line-height:1.6;
+      border-bottom:1px solid var(--border);
+    }
+    .table th{background:#f8fbff; text-align:left; color:#334155; font-weight:700}
+    .table tr:last-child td{border-bottom:none}
+    footer{
+      margin-top:16px; padding:14px 16px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:#ffffff;
+      color:var(--muted);
+      font-size:12px; line-height:1.65;
+    }
+    .one-liner{
+      font-size:15px; font-weight:800; color:#0f172a;
+      background:linear-gradient(90deg,#eaf4ff,#ffffff);
+      border:1px solid #d9ecff;
+      padding:12px 14px; border-radius:16px;
+    }
+  
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin:0 0 14px 0}
+.navbtn{display:inline-block;background:#eaf3ff;border:1px solid #d7e6ff;color:#0b6fb8;padding:10px 14px;border-radius:12px;
+font-size:15px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.navbtn:hover{text-decoration:underline}
+.navbtn.disabled{opacity:.55;cursor:not-allowed}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    
+    <div class="navlinks"><a class="navbtn" href="../index.html">返回上一级</a><a class="navbtn" href="../../index.html">返回总目录</a></div><header>
+      <h1>香港中文大学（CUHK）｜Quantitative Finance（量化金融）——十项详解</h1>
+      <div class="subtitle">把数学、统计与编程用在金融里：做定价、风险、组合与策略，强调模型与数据，是金融里最“硬核”的方向之一。</div>
+      <div class="lead">香港中文大学（CUHK）｜相关专业详解（以官方最新归属为准）</div>
+      <div class="badges"><div class="badge">数学与统计</div>
+<div class="badge">编程与建模</div>
+<div class="badge">定价/风险/策略</div>
+<div class="badge">适合量化/风控/FinTech</div></div>
+    </header>
+    
+    <main>
+      
+      <section class="card">
+        <h2><span class="num">1</span>该专业是什么</h2>
+        <ul class="ul">
+<li>量化金融用数学与计算方法解决金融问题：金融产品定价、风险度量、资产配置与策略研究。</li>
+<li>学习重心从“讲故事”转向“模型可验证、结果可复现”。</li>
+<li>常与金融工程、数理统计、计算机课程交叉。</li>
+</ul><div class="callout">如果你喜欢模型、数据、代码，并愿意持续打磨，量化金融是高回报但高强度的路线。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">2</span>该专业学什么</h2>
+        <ul class="ul">
+<li>概率统计与随机过程：随机变量、布朗运动、随机微分方程基础（依课程深度）。</li>
+<li>金融工程/衍生品：期权定价、对冲、波动率与收益率建模。</li>
+<li>数值方法：蒙特卡洛、优化、数值求解。</li>
+<li>计量与机器学习：回归、时间序列、因子模型、ML入门。</li>
+<li>编程与数据：Python/可能的C++、数据管道、回测框架。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">3</span>该专业适合什么样的人</h2>
+        <ul class="ul">
+<li><b>适合</b>：数学不错、愿意写代码、能在抽象推导中保持耐心。</li>
+<li><b>更适合（加分）</b>：喜欢把模型跑通并复现结果；能接受“错误→调试→迭代”。</li>
+<li><b>不太适合</b>：非常讨厌数学/编程；只想做纯商务沟通。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">4</span>该专业通常会做什么项目</h2>
+        <ul class="ul">
+<li>衍生品定价与对冲：实现Black-Scholes/树模型/蒙特卡洛并做敏感度分析。</li>
+<li>因子投资与回测：构建因子、回测与风险控制。</li>
+<li>风险模型：VaR/ES、压力测试、情景分析与模型验证。</li>
+<li>优化配置：均值-方差、风险平价、约束优化。</li>
+<li>数据工程练习：清洗行情/财务数据，搭建可复现管线。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">5</span>该专业需要掌握的主要技能</h2>
+        <ul class="ul">
+<li>数学与统计：概率、优化、时间序列。</li>
+<li>编程：Python为主；（加分）C++/高性能计算。</li>
+<li>建模与验证：假设、推导、实验、检验与过拟合控制。</li>
+<li>金融直觉：产品机制、风险来源与市场微观结构基础。</li>
+<li>沟通：把模型限制与风险讲清楚（模型治理）。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">6</span>该专业需要学习哪些基础课</h2>
+        <ul class="ul">
+<li>微积分/线代/概率统计</li>
+<li>编程（Python，数据结构）</li>
+<li>公司金融/投资学基础</li>
+<li>计量/时间序列与优化</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">7</span>该专业未来的就业岗位及薪酬范围及各岗位受AI影响的冲击</h2>
+        <ul class="ul">
+<li><b>量化研究/交易（门槛高）</b>：Quant Research/Trader（约 HK$40k–150k+/月起，强依机构与奖金）；AI影响：研究工具更强→更看重“数据、创新与工程化落地”。</li>
+<li><b>量化风险/模型验证</b>：Model Risk、风险建模（约 HK$35k–100k/月起）；AI影响：自动建模普及→更看重“模型治理与解释”。</li>
+<li><b>FinTech/数据科学</b>：金融数据科学、风控算法（约 HK$30k–90k/月起）；AI影响：AutoML提升→更看重“业务定义与数据质量”。</li>
+</ul><div class="callout">量化金融受AI影响非常大：AI会加速研究与编码，但“谁能做出更稳健的模型并工程化”，仍是核心差距。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">8</span>与相近方向对比（表格版）</h2>
+        
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>对比方向</th><th>核心差异</th><th>更适合的目标</th><th>课程/技能侧重</th><th>AI冲击点</th></tr></thead>
+        <tbody>
+          <tr><td>Global Economics and Finance</td><td>GEF更宏观/解释；QF更数学/模型</td><td>想做宏观研究 vs 想做定价/量化</td><td>QF：随机/数值/回测；GEF：计量/宏观</td><td>QF受冲击更大→要更强数理与工程</td></tr>
+<tr><td>Finance</td><td>金融更偏公司/市场产品；QF偏模型与计算</td><td>投行/公司金融 vs 量化/风控模型</td><td>金融：估值/产品；QF：模型/代码</td><td>金融文案自动化强；QF研究自动化强</td></tr>
+<tr><td>Data Science</td><td>DS更通用；QF更金融约束与产品机制</td><td>想走通用DS vs 金融量化</td><td>QF：风险/定价；DS：广泛算法</td><td>两者都受AI影响大→更重问题定义</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">9</span>一句话总结</h2>
+        <div class="callout">量化金融＝用数学与代码在金融里做模型与策略，AI会加速你，但也会加剧竞争。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">10</span>该专业四年课程设置（表格版）</h2>
+        
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Year</th><th>重点目标</th><th>代表性课程/训练</th><th>项目/实习建议</th></tr></thead>
+        <tbody>
+          <tr><td>Year 1</td><td>数理与编程打底</td><td>微积分/线代/概率、Python</td><td>做数据清洗与回归小项目</td></tr>
+<tr><td>Year 2</td><td>金融工程入门</td><td>投资学/公司金融、计量/时间序列</td><td>实现期权定价与回测雏形</td></tr>
+<tr><td>Year 3</td><td>模型深化与工程化</td><td>随机过程/数值方法/优化、机器学习</td><td>做完整策略回测+风险控制；争取实习</td></tr>
+<tr><td>Year 4</td><td>整合与求职对齐</td><td>Capstone（定价/策略/风控）</td><td>把项目工程化成作品集（代码+报告+复现）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+      </section>
+    
+    </main>
+    
+    <footer>
+      <div class="footnote">
+        说明：本页为面向选专业的“理解型”整理（非官方课程手册）。具体课程名称、学分、入学与毕业要求、双学位/stream 细则与申请门槛，请以 CUHK 官方网页与最新课程手册为准。
+      </div>
+    </footer>
+    
+  </div>
+</body>
+</html>

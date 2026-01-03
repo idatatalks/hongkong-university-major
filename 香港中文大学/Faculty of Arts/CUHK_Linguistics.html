@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CUHK｜Linguistics（语言学）——十项详解</title>
+  <style>
+    :root{
+      --brand:#0b6fb8;
+      --brand2:#1a8fd6;
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --text:#1f2a37;
+      --muted:#6b7280;
+      --border:#e6edf6;
+      --shadow:0 10px 25px rgba(15, 23, 42, 0.06);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:28px;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+      background:var(--bg); color:var(--text);
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1050px; margin:0 auto}
+    header{
+      background:linear-gradient(90deg,var(--brand),var(--brand2));
+      color:#fff; border-radius:20px; padding:22px 22px 18px 22px;
+      box-shadow:var(--shadow);
+    }
+    h1{margin:0; font-size:22px; letter-spacing:.2px}
+    .subtitle{margin-top:8px; font-size:13px; opacity:.95; line-height:1.55}
+    .badges{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+    .badge{
+      background:rgba(255,255,255,.16);
+      border:1px solid rgba(255,255,255,.24);
+      padding:6px 10px; border-radius:999px;
+      font-size:12px;
+      backdrop-filter: blur(6px);
+    }
+
+    .grid{display:grid; gap:14px; margin-top:16px}
+    
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:18px 18px 16px 18px;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+    }
+    .card h2{
+      margin:0 0 10px 0;
+      font-size:16px;
+      display:flex; align-items:center; gap:10px;
+    }
+    .num{
+      width:28px; height:28px; border-radius:10px;
+      display:inline-flex; align-items:center; justify-content:center;
+      background:#eaf4ff; color:var(--brand); font-weight:700;
+      border:1px solid #d9ecff;
+      flex:0 0 auto;
+    }
+    .p{margin:0; color:var(--text); line-height:1.75; font-size:13.5px}
+    ul{margin:10px 0 0 18px; padding:0; color:var(--text); line-height:1.75; font-size:13.5px}
+    li{margin:6px 0}
+    .muted{color:var(--muted)}
+    .two-col{display:grid; gap:12px}
+    
+    .mini{
+      background:#fbfdff;
+      border:1px dashed #dfeaf6;
+      border-radius:14px;
+      padding:12px 12px 10px 12px;
+    }
+    .mini h3{margin:0 0 6px 0; font-size:13.5px}
+    .mini p{margin:0; font-size:13px; line-height:1.7; color:var(--text)}
+    .callout{
+      border-left:4px solid var(--brand);
+      background:#f2f8ff;
+      border-radius:12px;
+      padding:10px 12px;
+      margin-top:10px;
+      font-size:13px; line-height:1.7;
+    }
+    .table{
+      width:100%; border-collapse:separate; border-spacing:0;
+      margin-top:10px; font-size:13px;
+      overflow:hidden; border-radius:14px;
+      border:1px solid var(--border);
+    }
+    .table th, .table td{
+      padding:10px 10px; vertical-align:top; line-height:1.6;
+      border-bottom:1px solid var(--border);
+    }
+    .table th{background:#f8fbff; text-align:left; color:#334155; font-weight:700}
+    .table tr:last-child td{border-bottom:none}
+    footer{
+      margin-top:16px; padding:14px 16px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:#ffffff;
+      color:var(--muted);
+      font-size:12px; line-height:1.65;
+    }
+    .one-liner{
+      font-size:15px; font-weight:800; color:#0f172a;
+      background:linear-gradient(90deg,#eaf4ff,#ffffff);
+      border:1px solid #d9ecff;
+      padding:12px 14px; border-radius:16px;
+    }
+  
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin:0 0 14px 0}
+.navbtn{display:inline-block;background:#eaf3ff;border:1px solid #d7e6ff;color:#0b6fb8;padding:10px 14px;border-radius:12px;
+font-size:15px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.navbtn:hover{text-decoration:underline}
+.navbtn.disabled{opacity:.55;cursor:not-allowed}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    
+    <div class="navlinks"><a class="navbtn" href="../index.html">返回上一级</a><a class="navbtn" href="../../index.html">返回总目录</a></div><header>
+      <h1>香港中文大学（CUHK）｜Linguistics（语言学）——十项详解</h1>
+      <div class="subtitle">用科学方法研究语言：从语音到语法、从语义到语用、从心理语言学到计算语言学，训练你用数据与实验理解“人类如何使用语言”。</div>
+      <div class="badges"><div class="badge">语言科学</div>
+<div class="badge">实验与数据</div>
+<div class="badge">可接计算语言学/AI</div>
+<div class="badge">适合NLP/教育/研究</div></div>
+    </header>
+    
+    <main>
+      
+      <section class="card">
+        <h2><span class="num">1</span>该专业是什么</h2>
+        <p class="p"><b>BA in Linguistics</b> 语言学把语言当作可研究的系统：你会像科学家一样提出假设、收集语言数据、做实验或形式化分析。</p><div class="callout">语言学≠学外语；它是研究语言机制与认知。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">2</span>该专业学什么</h2>
+        <ul class="ul">
+<li>核心模块：语音学/音系学、形态学、句法学、语义学、语用学。</li>
+<li>实验与方法：语料库、问卷/反应时实验、统计与数据分析。</li>
+<li>心理语言学：语言加工、习得与双语。</li>
+<li>社会语言学：语言变体、身份与语言政策。</li>
+<li>计算语言学（可选）：文本处理、NLP入门、语料库工具。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">3</span>该专业适合什么样的人</h2>
+        <ul class="ul">
+<li><b>适合</b>：喜欢“规则与系统”、对语言细节敏感；愿意做数据分析与实验。</li>
+<li><b>更适合（加分）</b>：对NLP/AI、语料库或语言教育感兴趣。</li>
+<li><b>不太适合</b>：只想学口语/外语技能，不想做分析与形式化。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">4</span>该专业通常会做什么项目</h2>
+        <ul class="ul">
+<li>语料库分析：用真实文本数据验证一个语言现象。</li>
+<li>实验项目：设计小实验测试语义/句法加工。</li>
+<li>语音分析：用软件分析语音特征。</li>
+<li>（计算方向）NLP小项目：分词/标注/分类等入门应用。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">5</span>该专业需要掌握的主要技能</h2>
+        <ul class="ul">
+<li>形式化分析：把语言现象写成清晰规则与结构。</li>
+<li>数据与统计：基础统计、R/Python入门、可视化。</li>
+<li>实验设计与伦理：变量控制、采样与解释。</li>
+<li>（加分）编程与NLP工具链：文本处理、正则、基础模型思维。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">6</span>该专业需要学习哪些基础课</h2>
+        <ul class="ul">
+<li>逻辑与分析思维（课程会训练）。</li>
+<li>统计与数据素养（对实验/语料很重要）。</li>
+<li>写作与论证（解释语言现象）。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">7</span>该专业未来的就业岗位及薪酬范围及各岗位受AI影响的冲击</h2>
+        <ul class="ul">
+<li><b>NLP/语言科技</b>：语言数据标注/分析、NLP助理（约 HK$25k–65k/月起）。AI影响：工具强→更看重“数据质量、评测与语言知识”。</li>
+<li><b>UX/内容</b>：对话设计、内容策略（约 HK$25k–60k/月起）。AI影响：生成式对话普及→更看重“语用与人机沟通设计”。</li>
+<li><b>教育</b>：语言教育/课程设计（约 HK$22k–50k/月起）。AI影响：练习生成更快→更看重“教学与评估设计”。</li>
+<li><b>研究</b>：研究助理/硕博路径（约 HK$18k–40k/月起）。AI影响：文献处理更快→更看重“方法严谨”。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">8</span>与相近方向对比</h2>
+        <ul class="ul">
+<li><b>对比 英语/翻译</b>：英语/翻译偏表达与文本；语言学偏机制与数据。</li>
+<li><b>对比 计算机科学</b>：CS偏算法系统；语言学偏语言知识与实验/语料。</li>
+<li><b>对比 心理学</b>：心理偏行为实验广；语言学聚焦语言加工与结构。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">9</span>一句话总结</h2>
+        <div class="callout">一句话：语言学把语言变成可被数据与实验验证的对象，是连接人文与AI/NLP的一条硬核路线。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">10</span>该专业四年课程设置</h2>
+        
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Year</th><th>重点目标</th><th>代表性课程/训练</th><th>项目/实习建议</th></tr></thead>
+        <tbody>
+          <tr><td>Year 1</td><td>打底：核心分支概念</td><td>语音/句法/语义入门、写作</td><td>做小型语言现象分析，训练“描述→解释”</td></tr>
+<tr><td>Year 2</td><td>方法：语料与实验</td><td>社会/心理语言学、统计入门</td><td>完成语料库或实验项目；学习R/Python基础</td></tr>
+<tr><td>Year 3</td><td>专题化：计算/教育/认知</td><td>计算语言学或高级专题</td><td>实习/研究助理；做NLP或对话设计作品</td></tr>
+<tr><td>Year 4</td><td>整合输出</td><td>毕业论文/Capstone</td><td>用论文/项目对齐岗位（NLP/教育/研究）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+      </section>
+    
+    </main>
+    
+    <footer>
+      <div class="footnote">
+        说明：本页为面向选专业的“理解型”整理（非官方课程手册）。具体课程名称、学分、入学与毕业要求、作品集/试音等安排，请以 CUHK 官方网页与最新课程手册为准。
+      </div>
+    </footer>
+    
+  </div>
+</body>
+</html>

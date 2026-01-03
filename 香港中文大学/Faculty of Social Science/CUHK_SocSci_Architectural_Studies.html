@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CUHK｜Architectural Studies（建筑学（建筑研究））——十项详解</title>
+  <style>
+    :root{
+      --brand:#0b6fb8;
+      --brand2:#1a8fd6;
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --text:#1f2a37;
+      --muted:#6b7280;
+      --border:#e6edf6;
+      --shadow:0 10px 25px rgba(15, 23, 42, 0.06);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:28px;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+      background:var(--bg); color:var(--text);
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1050px; margin:0 auto}
+    header{
+      background:linear-gradient(90deg,var(--brand),var(--brand2));
+      color:#fff; border-radius:20px; padding:22px 22px 18px 22px;
+      box-shadow:var(--shadow);
+    }
+    h1{margin:0; font-size:22px; letter-spacing:.2px}
+    .subtitle{margin-top:8px; font-size:13px; opacity:.95; line-height:1.55}
+    .badges{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+    .badge{
+      background:rgba(255,255,255,.16);
+      border:1px solid rgba(255,255,255,.24);
+      padding:6px 10px; border-radius:999px;
+      font-size:12px;
+      backdrop-filter: blur(6px);
+    }
+
+    .grid{display:grid; gap:14px; margin-top:16px}
+    
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:18px 18px 16px 18px;
+      box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+    }
+    .card h2{
+      margin:0 0 10px 0;
+      font-size:16px;
+      display:flex; align-items:center; gap:10px;
+    }
+    .num{
+      width:28px; height:28px; border-radius:10px;
+      display:inline-flex; align-items:center; justify-content:center;
+      background:#eaf4ff; color:var(--brand); font-weight:700;
+      border:1px solid #d9ecff;
+      flex:0 0 auto;
+    }
+    .p{margin:0; color:var(--text); line-height:1.75; font-size:13.5px}
+    ul{margin:10px 0 0 18px; padding:0; color:var(--text); line-height:1.75; font-size:13.5px}
+    li{margin:6px 0}
+    .muted{color:var(--muted)}
+    .two-col{display:grid; gap:12px}
+    
+    .mini{
+      background:#fbfdff;
+      border:1px dashed #dfeaf6;
+      border-radius:14px;
+      padding:12px 12px 10px 12px;
+    }
+    .mini h3{margin:0 0 6px 0; font-size:13.5px}
+    .mini p{margin:0; font-size:13px; line-height:1.7; color:var(--text)}
+    .callout{
+      border-left:4px solid var(--brand);
+      background:#f2f8ff;
+      border-radius:12px;
+      padding:10px 12px;
+      margin-top:10px;
+      font-size:13px; line-height:1.7;
+    }
+    .table{
+      width:100%; border-collapse:separate; border-spacing:0;
+      margin-top:10px; font-size:13px;
+      overflow:hidden; border-radius:14px;
+      border:1px solid var(--border);
+    }
+    .table th, .table td{
+      padding:10px 10px; vertical-align:top; line-height:1.6;
+      border-bottom:1px solid var(--border);
+    }
+    .table th{background:#f8fbff; text-align:left; color:#334155; font-weight:700}
+    .table tr:last-child td{border-bottom:none}
+    footer{
+      margin-top:16px; padding:14px 16px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:#ffffff;
+      color:var(--muted);
+      font-size:12px; line-height:1.65;
+    }
+    .one-liner{
+      font-size:15px; font-weight:800; color:#0f172a;
+      background:linear-gradient(90deg,#eaf4ff,#ffffff);
+      border:1px solid #d9ecff;
+      padding:12px 14px; border-radius:16px;
+    }
+  
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin:0 0 14px 0}
+.navbtn{display:inline-block;background:#eaf3ff;border:1px solid #d7e6ff;color:#0b6fb8;padding:10px 14px;border-radius:12px;
+font-size:15px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.navbtn:hover{text-decoration:underline}
+.navbtn.disabled{opacity:.55;cursor:not-allowed}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    
+    <div class="navlinks"><a class="navbtn" href="../index.html">返回上一级</a><a class="navbtn" href="../../index.html">返回总目录</a></div><header>
+      <h1>香港中文大学（CUHK）｜Architectural Studies（建筑学（建筑研究））——十项详解</h1>
+      <div class="subtitle">以“设计工作室（Studio）+ 人文与技术 + 城市与可持续”为骨架的建筑教育起点：训练空间想象、表达与构造，把抽象概念变成可讨论、可验证、可呈现的方案。</div>
+      <div class="badges">
+        <div class="badge">设计工作室为核心（studio-based）</div>
+<div class="badge">强调城市与可持续、技术与制作</div>
+<div class="badge">可衔接专业建筑深造（如MArch等路径）</div>
+      </div>
+      <div class="meta"><div class="meta-title">参考链接</div><a href="https://admission.cuhk.edu.hk/programme/archn/" target="_blank" rel="noopener">官方参考链接1</a> <a href="https://www.arch.cuhk.edu.hk/programmes/degrees/bssc-as" target="_blank" rel="noopener">官方参考链接2</a></div>
+    </header>
+    
+    <main>
+
+      <section class="card">
+        <h2><span class="num">1</span>该专业是什么</h2>
+        <p class="p"><b>BSSc in Architectural Studies</b> 这是一个以建筑与城市为核心议题的社会科学学位路径：用设计与研究方法理解“空间如何影响人、社会与环境”，并训练把想法转化为图纸、模型与可沟通的方案。</p><div class="callout">关键词：空间思维、设计工作室、表达能力、技术与制作、城市与可持续。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">2</span>该专业学什么</h2>
+        <ul class="ul">
+<li>设计工作室（Studio）：从概念—场地—方案—表达—迭代评图，学习建筑设计的完整工作流。</li>
+<li>建筑历史/理论与批评：学会“看懂”建筑与城市，并能用清晰逻辑表达观点。</li>
+<li>建筑技术与构造：材料、结构、环境控制、可持续策略、建筑法规/实践等基本素养。</li>
+<li>表达与工具：手绘、制图、模型制作、数字建模（CAD/3D/可视化）与作品集。</li>
+<li>城市与社会议题：公共空间、居住、更新、交通、社区与公平等。</li>
+</ul><div class="callout">你会反复做：调研→提出概念→推敲平面/剖面/体量→模型/渲染→评图改进。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">3</span>该专业适合什么样的人</h2>
+        <ul class="ul">
+<li><b>适合</b>：视觉/空间直觉强、喜欢把想法做成“看得见”的成果；能接受频繁迭代与反馈；对城市、文化与可持续有兴趣。</li>
+<li><b>不太适合</b>：极度讨厌不确定性、很排斥开放式作业；不愿意投入大量时间在图纸/模型/作品集打磨。</li>
+</ul><div class="callout">建筑学习的强度不只在“难”，更在“反复迭代与时间投入”。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">4</span>该专业通常会做什么项目</h2>
+        <ul class="ul">
+<li>建筑设计Studio项目：住宅/公共建筑/混合用途等，从场地分析到完整方案表达。</li>
+<li>城市设计/更新：旧区活化、TOD（轨道交通导向开发）、公共空间策略。</li>
+<li>可持续与环境策略：被动式设计、日照/通风分析、材料与碳足迹。</li>
+<li>数字与制作：参数化/数字制造（激光切割、3D打印）、原型搭建。</li>
+<li>作品集（Portfolio）与竞赛：是申请交换、实习和深造的重要资产。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">5</span>该专业需要掌握的主要技能</h2>
+        <ul class="ul">
+<li>空间与形体思维：能用平面/剖面/轴测/模型表达空间关系。</li>
+<li>表达与叙事：用图像+文字讲清“问题—概念—策略—方案”。</li>
+<li>工具链：手绘/制图、建模渲染（CAD/3D/可视化）、排版与作品集。</li>
+<li>研究与场地分析：观察、访谈、测绘、数据与证据支撑设计决策。</li>
+<li>协作与沟通：评图表达、团队分工、与工程/社会/环境因素协调。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">6</span>该专业需要学习哪些基础课</h2>
+        <ul class="ul">
+<li>社科/人文基础：城市与社会、文化研究、批判性写作与论证。</li>
+<li>数学/物理（够用就好）：用于结构与环境分析的基础概念。</li>
+<li>设计基础：视觉表达、构图、模型制作、材料与构造入门。</li>
+<li>数字技能：CAD/建模/渲染/排版的工具课（通常随studio推进）。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">7</span>该专业未来的就业岗位及薪酬范围及各岗位受AI影响的冲击</h2>
+        <ul class="ul">
+<li><b>建筑设计相关</b>：助理建筑师/建筑设计助理（入门约 HK$20k–35k/月；大型事务所/海外更高），AI主要影响：制图、渲染、方案生成与文档自动化→更看重“概念+综合协调+落地”。</li>
+<li><b>城市/规划/咨询</b>：城市研究员、规划/交通/地产咨询（约 HK$22k–40k/月起；随经验上升明显），AI影响：数据分析/报告生成更快→更看重“问题定义+利益相关方沟通”。</li>
+<li><b>可持续/ESG/建筑性能</b>：绿色建筑顾问、碳管理/认证助理（约 HK$22k–45k/月起），AI影响：模拟与合规文档更自动化→更看重“策略与跨专业协作”。</li>
+<li><b>数字建造/可视化</b>：BIM/参数化/可视化（约 HK$20k–45k/月起），AI影响：建模与出图效率提升→更看重“流程设计与质量控制”。</li>
+</ul><div class="callout">提示：建筑“被AI替代”的风险总体不如“被会用AI的人替代”。作品集与实战经历是关键。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">8</span>与相近方向对比</h2>
+        <ul class="ul">
+<li><b>对比 工程类建筑学</b>：工程更强调结构/系统与定量；本项目更强调设计studio与综合表达。</li>
+<li><b>对比 城市规划/地理</b>：规划/地理更偏政策与空间数据；建筑研究更偏空间与形体的设计训练。</li>
+<li><b>对比 工业/交互设计</b>：工业/交互更偏产品与用户；建筑更偏空间系统与城市尺度。</li>
+</ul>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">9</span>一句话总结</h2>
+        <div class="callout">一句话：如果你想用“设计工作室”的方式训练空间想象与表达，并愿意为作品集投入时间，这个项目是通往建筑/城市方向的高强度起跑线。</div>
+      </section>
+    
+
+      <section class="card">
+        <h2><span class="num">10</span>该专业四年课程设置</h2>
+        
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Year</th><th>重点目标</th><th>代表性课程/训练</th><th>项目/实习建议</th></tr></thead>
+        <tbody>
+          <tr><td>Year 1</td><td>打基础：设计语言与表达</td><td>设计基础/视觉表达/制图与模型；人文与城市导论</td><td>尽早建立作品集框架；参加工作坊/讲座</td></tr>
+<tr><td>Year 2</td><td>进入建筑工作流：场地与方案</td><td>Studio进阶；建筑史论；材料/构造与环境基础</td><td>做1个可展示的studio代表作；申请暑期实习</td></tr>
+<tr><td>Year 3</td><td>专题化：可持续/城市/数字</td><td>Studio专题；数字建模/参数化；城市议题与研究方法</td><td>交换/海外studio/竞赛；积累BIM/可视化技能</td></tr>
+<tr><td>Year 4</td><td>整合与毕业作品</td><td>毕业设计/论文/综合项目；专业实践与作品集完善</td><td>用毕业作品+实习经历锁定方向（建筑/城市/咨询/可持续）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+      </section>
+    
+</main>
+    
+    <footer>
+      <div class="footnote">
+        说明：本页为面向选专业的“理解型”整理（非官方课程手册）。具体课程名称、学分与毕业要求请以 CUHK 官方网页/最新课程手册为准。
+      </div>
+    </footer>
+    
+  </div>
+</body>
+</html>

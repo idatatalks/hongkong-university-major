@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HKUST｜BEng/BSc in Computer Science｜十一项详解（单列版）</title>
+  <style>
+:root{
+  --brand:#0b6fb8;
+  --brand2:#1a8fd6;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --text:#1f2a37;
+  --muted:#6b7280;
+  --border:#e6edf6;
+  --shadow:0 10px 25px rgba(15, 23, 42, 0.06);
+  --radius:16px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:28px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text);
+}
+a{color:var(--brand); text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:980px; margin:0 auto}
+header{
+  background:linear-gradient(90deg,var(--brand),var(--brand2));
+  color:#fff; border-radius:20px; padding:22px 22px 18px 22px;
+  box-shadow:var(--shadow);
+}
+h1{margin:0; font-size:22px; letter-spacing:.2px}
+.subtitle{margin-top:8px; font-size:13px; opacity:.95; line-height:1.55}
+.badges{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+.badge{
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.24);
+  padding:6px 10px; border-radius:999px;
+  font-size:12px;
+  backdrop-filter: blur(6px);
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:18px 18px 16px 18px;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+  margin-top:14px;
+}
+.card h2{
+  margin:0 0 10px 0;
+  font-size:16px;
+  display:flex; align-items:center; gap:10px;
+}
+.num{
+  width:28px; height:28px; border-radius:10px;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:#eaf4ff; color:var(--brand); font-weight:700;
+  border:1px solid #d9ecff;
+  flex:0 0 auto;
+}
+.p{margin:0; color:var(--text); line-height:1.75; font-size:13.5px}
+ul{margin:10px 0 0 18px; padding:0; color:var(--text); line-height:1.75; font-size:13.5px}
+li{margin:6px 0}
+.muted{color:var(--muted)}
+.mini{
+  background:#fbfdff;
+  border:1px dashed #dfeaf6;
+  border-radius:14px;
+  padding:12px 12px 10px 12px;
+  margin-top:10px;
+}
+.mini h3{margin:0 0 6px 0; font-size:13.5px}
+.mini p{margin:0; font-size:13px; line-height:1.7; color:var(--text)}
+.callout{
+  border-left:4px solid var(--brand);
+  background:#f2f8ff;
+  border-radius:12px;
+  padding:10px 12px;
+  margin-top:10px;
+  font-size:13px; line-height:1.7;
+}
+.table{
+  width:100%; border-collapse:separate; border-spacing:0;
+  margin-top:10px; font-size:13px;
+  overflow:hidden; border-radius:14px;
+  border:1px solid var(--border);
+}
+.table th, .table td{
+  padding:10px 10px; vertical-align:top; line-height:1.6;
+  border-bottom:1px solid var(--border);
+}
+.table th{background:#f8fbff; text-align:left; color:#334155; font-weight:700}
+.table tr:last-child td{border-bottom:none}
+footer{
+  margin-top:16px; padding:14px 16px;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background:#ffffff;
+  color:var(--muted);
+  font-size:12px; line-height:1.65;
+}
+.one-liner{
+  font-size:15px; font-weight:800; color:#0f172a;
+  background:linear-gradient(90deg,#eaf4ff,#ffffff);
+  border:1px solid #d9ecff;
+  padding:12px 14px; border-radius:16px;
+}
+.smalltag{display:inline-block; font-size:12px; color:#0f172a; background:#eef6ff; border:1px solid #d9ecff; padding:4px 8px; border-radius:999px; margin-right:6px; margin-top:6px;}
+
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin:0 0 14px 0}
+.navbtn{display:inline-block;background:#eaf3ff;border:1px solid #d7e6ff;color:#0b6fb8;padding:10px 14px;border-radius:12px;
+font-size:15px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.navbtn:hover{text-decoration:underline}
+.navbtn.disabled{opacity:.55;cursor:not-allowed}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="navlinks"><a class="navbtn" href="../index.html">返回上一级</a><a class="navbtn" href="../../index.html">返回总目录</a></div><header>
+      <h1>香港科技大学（HKUST）｜BEng/BSc in Computer Science（计算机科学（工学/理学路径对比））——十一项详解</h1>
+      <div class="subtitle">同为“计算机科学核心能力”，但 BEng 往往更强调工程实现与系统交付，BSc 往往更偏科学基础与理论弹性。你可以把它理解为：同一门“语言”，不同的“训练侧重”。</div>
+      <div class="badges"><div class="badge">共同核心：算法/系统/软件</div>
+<div class="badge">BEng更偏工程交付与系统</div>
+<div class="badge">BSc更偏科学基础与弹性</div>
+<div class="badge">毕业项目/实习/科研决定上限</div></div>
+    </header>
+    
+    <section class="card">
+      <h2><span class="num">1</span>该专业是什么</h2>
+      
+<p class="p"><b>Computer Science（BEng/BSc）</b> 是“通用计算能力”的核心学科：从算法与数据结构到操作系统、网络、数据库与软件工程，训练你构建可维护、可扩展的计算系统。BEng与BSc的差异更多体现在培养侧重与配套要求。</p><div class="callout">一句话：<b>用计算解决问题</b>——算法+系统+软件工程三位一体。</div>
+
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">2</span>该专业学什么</h2>
+      
+<p class="p">你会学习：</p><ul>
+  <li><b>算法与抽象</b>：数据结构、算法设计、复杂度与正确性思维。</li>
+  <li><b>系统基础</b>：OS/网络/数据库/并发，让软件跑得稳、跑得快。</li>
+  <li><b>工程实践</b>：软件工程、测试、版本管理、团队协作与交付。</li>
+  <li><b>方向选修</b>：AI/安全/图形/系统/理论等（决定你的差异化标签）。</li>
+</ul><div class="mini"><h3>CS的“长板”</h3><p>可迁移性极强：你学到的是方法与底层原理，行业变化时更抗风险。</p></div>
+
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">3</span>该专业适合什么样的人</h2>
+      
+<ul>
+  <li><b>喜欢写代码并享受“把系统搭起来”</b>：愿意做项目、debug与迭代。</li>
+  <li><b>逻辑强、抽象能力好</b>：能把问题抽象成数据结构/算法/模块。</li>
+  <li><b>愿意持续学习</b>：技术栈变化快，但核心原理长期有效。</li>
+</ul><div class="callout">如果你更喜欢硬件与嵌入式，CPEG更合适；如果你更想专攻AI，BEng AI更合适。</div>
+
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">4</span>该专业通常会做什么项目</h2>
+      <p class="p">不同专业的项目主题会不同，但项目形态大多落在以下四类（你越早开始做，成长越快）：</p><ul>
+  <li><b>课程项目：</b>用课程学到的模型/工具做小型可复现项目（仿真、设计计算、实验数据分析、原型搭建）。</li>
+  <li><b>团队设计项目：</b>围绕明确需求做指标定义、方案比较、迭代测试与最终展示。</li>
+  <li><b>研究/论文型项目（Thesis/Research Option）：</b>进入导师团队做更深入的问题，训练科研方法与写作汇报。</li>
+  <li><b>工业/合作项目（Industrial / Co-op）：</b>对接真实场景，强调交付质量、工程约束与沟通。</li>
+</ul><div class="mini"><h3>本专业常见项目主题（示例）</h3><p>软件工程：全栈应用、移动端、后端服务、分布式系统； 系统项目：操作系统/网络/数据库/并发系统； 算法与竞赛：算法实现与性能优化； AI/数据：ML应用项目（作为方向选修）； 安全与隐私：渗透/防护/安全工程（作为选修）</p></div>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">5</span>该专业需要掌握的主要技能</h2>
+      <table class="table"><tr><th>技能域</th><th>你要能做到什么（越往后越重要）</th></tr><tr><td><b>编码与工程化</b></td><td>能写可维护代码：模块化、测试、CI、文档、代码评审。</td></tr><tr><td><b>算法与数据结构</b></td><td>复杂度分析、算法设计与正确性思维。</td></tr><tr><td><b>系统能力</b></td><td>操作系统、网络、数据库、分布式、并发。</td></tr><tr><td><b>软件架构</b></td><td>API设计、可扩展性、可靠性与性能。</td></tr><tr><td><b>沟通与产品</b></td><td>需求分析、PRD到技术方案到交付。</td></tr></table><div class="callout">最快的提升方式：<b>把课程知识转成作品集</b>（项目/科研/实习），让能力“可展示、可验证”。</div>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">6</span>该专业需要学习哪些基础课</h2>
+      <p class="p">下面是该方向通常会遇到的“基础课底座”（不同学生/路径会有加速或替代）：</p><ul>
+  <li><b>离散数学/算法与数据结构（核心）：</b>离散数学/算法与数据结构（核心）</li>
+  <li><b>系统基础：</b>OS/网络/数据库（核心）</li>
+  <li><b>软件工程与工程实践（核心）：</b>软件工程与工程实践（核心）</li>
+  <li><b>数学与概率统计（对AI/数据方向很关键）：</b>数学与概率统计（对AI/数据方向很关键）</li>
+  <li><b>方向选修：</b>AI/安全/图形/系统/理论等</li>
+</ul><p class="p"><span class='muted'>提示：具体到“课程号/学分/先修”请以 ugadmin PDF 为准；我在页面底部放了官方链接。</span></p>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">7</span>该专业未来的就业岗位及薪酬范围及各岗位受AI影响的冲击</h2>
+      <p class="p">下面按“常见岗位 → 典型薪酬范围（香港，月薪，约） → AI 冲击点”来写，便于你直观看到：哪些岗位更容易被自动化、哪些岗位反而会因 AI 更值钱。</p><div class="callout"><b>薪酬说明：</b>为方便横向比较，这里以<strong>香港</strong>的“毕业~1-3年”常见区间做近似；具体会受行业（政府/咨询/金融/互联网/半导体/新能源）、公司体量、IANG/身份、项目经验、语言与证书等影响。</div><table class="table"><tr><th>岗位</th><th>薪酬范围（HK$/月，约）</th><th>AI 冲击/变化（你需要补上的能力）</th></tr><tr><td><b>软件工程师（后端/全栈）</b></td><td>HK$25k–45k（头部更高）</td><td>写代码会被AI大幅提效；更看重<b>系统设计、代码质量、测试、性能与安全</b>。</td></tr><tr><td><b>系统/平台工程师（云/分布式）</b></td><td>HK$30k–55k</td><td>脚手架自动化；你要能做<b>架构权衡、可靠性、可观测性与成本优化</b>。</td></tr><tr><td><b>数据工程师</b></td><td>HK$28k–50k</td><td>ETL会被工具化；差异化在<b>数据建模、治理、实时/批处理架构</b>。</td></tr><tr><td><b>网络安全工程（初级）</b></td><td>HK$28k–55k</td><td>AI也会增强攻防；你要会<b>威胁建模、响应流程、合规与渗透/防护</b>。</td></tr><tr><td><b>产品/技术项目（PM/TPM）</b></td><td>HK$28k–55k</td><td>写文档更快；核心在<b>跨团队协作、取舍、路线图与交付</b>。</td></tr></table><p class="p muted">提示：AI 更容易替代“可被标准化的文档/报表/代码片段/重复算图”，但很难替代“对现场与约束负责的工程判断、跨团队沟通、验收与合规责任”。</p>
+    </section>
+
+
+    
+
+
+    <section class="card">
+      <h2><span class="num">8</span>与相近方向对比</h2>
+      <p class="p">下面用“你更在意什么”来快速对比相近方向（帮助你选专业/选路线）：</p><table class="table"><tr><th>相近方向</th><th>关键差异（怎么选）</th></tr><tr><td><b>BEng in AI</b></td><td>AI更专注算法与模型；CS更通用：系统、软件工程、理论、数据库、网络等。</td></tr><tr><td><b>Computer Engineering（CPEG）</b></td><td>CPEG更贴近硬件/嵌入式/体系结构；CS更偏软件与抽象。</td></tr><tr><td><b>Decision Analytics</b></td><td>DA更偏优化/运筹/商业分析；CS更偏软件与计算系统。</td></tr></table>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">9</span>一句话总结</h2>
+      <div class='one-liner'>一句话总结：同为“计算机科学核心能力”，但 BEng 往往更强调工程实现与系统交付，BSc 往往更偏科学基础与理论弹性。你可以把它理解为：同一门“语言”，不同的“训练侧重”。。</div><p class="p"><span class='muted'>如果你告诉我你更偏向“做产品/做科研/做管理/想去什么行业”，我可以在同模板下再给你写一份“选课+项目+实习”的四年路线图。</span></p>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">10</span>该专业四年课程设置</h2>
+      <p class="p">下面给出一份<strong>面向能力成长</strong>的“典型四年路径”（更接近你实际的学习体验）。不同同学会因：入学分流、荣誉/加速数学、交换、实习、研究选项而有所差异。</p><table class="table"><tr><th>学年</th><th>你在“练什么”</th><th>代表性课程类型（示例）</th><th>阶段性产出/项目</th></tr><tr><td><b>大一</b></td><td>建立编程与计算思维：写代码、会调试、会抽象</td><td>编程导论、离散/数学基础、基础项目课</td><td>完成2-3个小项目（含版本管理与文档）</td></tr><tr><td><b>大二</b></td><td>核心能力成型：数据结构/算法 + 系统/软件入门</td><td>数据结构、算法、系统入门、数据库/网络起步</td><td>课程项目：中型系统或算法项目</td></tr><tr><td><b>大三</b></td><td>分方向：系统/AI/安全/图形/理论等，做更硬的项目</td><td>高级系统/分布式/ML/安全/图形等选修</td><td>团队项目：可部署系统或研究型课题</td></tr><tr><td><b>大四</b></td><td>整合与作品集：Capstone/Thesis/Industrial + 高级选修</td><td>毕业项目/论文/工业项目</td><td>形成求职级作品集：demo/开源/实习成果</td></tr></table><div class="callout">做法建议：把每一年都至少产出<strong>1个可展示成果</strong>（项目/论文/竞赛/实习成果）。到申请研究生或找工作时，你会非常省力。</div>
+    </section>
+
+    <footer>
+      <b>信息来源（官方页面，便于你核对与追踪更新）：</b><br/>
+      1) ugadmin｜COMP（BEng in Computer Science）课程要求 PDF（2024-25）：<a href="https://ugadmin.hkust.edu.hk/prog_crs/ug/202425/pdf/24-25comp.pdf" target="_blank" rel="noopener">https://ugadmin.hkust.edu.hk/prog_crs/ug/202425/pdf/24-25comp.pdf</a><br/>
+2) HKUST Program & Course Catalog｜COMP：<a href="https://prog-crs.hkust.edu.hk/ugprog/2024-25/COMP" target="_blank" rel="noopener">https://prog-crs.hkust.edu.hk/ugprog/2024-25/COMP</a><br/>
+3) HKUST Program & Course Catalog（UG Programs）：<a href="https://prog-crs.hkust.edu.hk/ugprog" target="_blank" rel="noopener">https://prog-crs.hkust.edu.hk/ugprog</a><br/>
+      <span class="muted">注：课程编码/课程名会随学年微调；“四年课程设置”给的是<strong>按能力与课程类型组织的典型路径</strong>，你应以当年 HKUST Program & Course Catalog / ugadmin PDF 为准。</span>
+    <br/><br/>
+<b>薪酬参考（区间会随市场变化）：</b><br/>
+1) JobsDB｜Engineer salary（HK$25k–35k/月）：<a href="https://hk.jobsdb.com/career-advice/role/engineer/salary" target="_blank" rel="noopener">https://hk.jobsdb.com/career-advice/role/engineer/salary</a><br/>
+2) JobsDB｜Data Scientist salary（HK$34k–44k/月）：<a href="https://hk.jobsdb.com/career-advice/role/data-scientist/salary" target="_blank" rel="noopener">https://hk.jobsdb.com/career-advice/role/data-scientist/salary</a><br/>
+3) Indeed｜Software Engineer salary（香港，HK$26,709/月）：<a href="https://hk.indeed.com/career/software-engineer/salaries" target="_blank" rel="noopener">https://hk.indeed.com/career/software-engineer/salaries</a><br/>
+4) JobsDB｜Mechanical Engineer salary（HK$23k–31k/月）：<a href="https://hk.jobsdb.com/career-advice/role/mechanical-engineer/salary" target="_blank" rel="noopener">https://hk.jobsdb.com/career-advice/role/mechanical-engineer/salary</a><br/>
+5) Levels.fyi｜Entry Level Software Engineer（HK，总包）：<a href="https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/hong-kong-hkg" target="_blank" rel="noopener">https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/hong-kong-hkg</a>
+</footer>
+  </div>
+</body>
+</html>

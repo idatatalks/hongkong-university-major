@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生命科学专业深度对比指南</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --bg: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--primary); background-color: var(--bg); margin: 0; padding: 20px; }
+        .container { max-width: 1100px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        
+        header { text-align: center; border-bottom: 2px solid #eee; margin-bottom: 40px; padding-bottom: 20px; }
+        h1 { color: var(--primary); font-size: 2.2em; margin-bottom: 10px; }
+        .subtitle { color: #7f8c8d; font-size: 1.1em; }
+
+        /* 核心定位卡片 */
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .summary-card { padding: 20px; border-radius: 10px; background: #fff; border-top: 5px solid var(--accent); box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .summary-card:hover { transform: translateY(-5px); }
+        .summary-card h3 { margin-top: 0; color: var(--accent); }
+        .summary-card p { font-size: 0.95em; margin-bottom: 0; }
+
+        /* 专业详细解析区 */
+        .section-title { background: var(--primary); color: white; padding: 10px 20px; border-radius: 5px; margin-top: 40px; display: inline-block; }
+        .detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 30px; margin-top: 20px; }
+        .detail-box { border: 1px solid #eee; border-radius: 8px; padding: 25px; background: #fff; }
+        .detail-box h3 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; color: #2980b9; }
+        
+        .list-title { font-weight: bold; margin-top: 15px; color: #444; display: block; }
+        ul { padding-left: 20px; margin: 10px 0; }
+        li { margin-bottom: 5px; font-size: 0.95em; }
+        
+        .badge-group { margin-top: 15px; }
+        .badge { display: inline-block; padding: 4px 12px; border-radius: 15px; font-size: 0.85em; margin-right: 5px; font-weight: bold; }
+        .badge-ok { background: #e8f5e9; color: var(--success); }
+        .badge-no { background: #ffebee; color: var(--danger); }
+
+        /* 对比表 */
+        .table-container { overflow-x: auto; margin: 40px 0; }
+        table { width: 100%; border-collapse: collapse; background: white; }
+        th, td { border: 1px solid #e0e6ed; padding: 15px; text-align: center; }
+        th { background-color: #f1f4f7; font-weight: 600; color: #34495e; }
+        .highlight-row { font-weight: bold; color: var(--accent); }
+
+        /* 建议区 */
+        .advice-box { background: #fffde7; border-left: 5px solid #fbc02d; padding: 25px; border-radius: 4px; margin-top: 40px; }
+        .advice-box h2 { margin-top: 0; color: #856404; }
+        .advice-item { margin-bottom: 15px; font-size: 1.1em; }
+        .advice-item span { color: var(--danger); font-weight: bold; }
+
+        footer { text-align: center; margin-top: 50px; color: #95a5a6; font-size: 0.9em; padding-bottom: 20px; }
+    
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin:0 0 14px 0}
+.navbtn{display:inline-block;background:#eaf3ff;border:1px solid #d7e6ff;color:#0b6fb8;padding:10px 14px;border-radius:12px;
+font-size:15px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.navbtn:hover{text-decoration:underline}
+.navbtn.disabled{opacity:.55;cursor:not-allowed}
+</style>
+</head>
+<body><div class="navlinks"><a class="navbtn" href="../index.html">返回上一级</a><a class="navbtn" href="../../index.html">返回总目录</a></div><div class="container">
+    <header>
+        <h1>生命科学专业深度对比 </h1>
+        <p class="subtitle">Biology vs Biochemistry vs Cell/Molecular vs Biotechnology </p>
+    </header>
+
+    <div class="summary-grid">
+        <div class="summary-card">
+            <h3>Biology</h3>
+            <p>研究“生命是什么”的宏微观基础学科 [cite: 5]</p>
+        </div>
+        <div class="summary-card">
+            <h3>Biochemistry</h3>
+            <p>用化学视角研究生命的分子机制 [cite: 6]</p>
+        </div>
+        <div class="summary-card">
+            <h3>Cell & Molecular</h3>
+            <p>专注细胞与分子层面的生命运作 [cite: 7]</p>
+        </div>
+        <div class="summary-card">
+            <h3>Biotechnology</h3>
+            <p>把分子生物学变成技术与产品 [cite: 8]</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">专业深度解析 </h2>
+    <div class="detail-grid">
+        <div class="detail-box">
+            <h3>Biology (生物学)</h3>
+            <span class="list-title">核心课程:</span>
+            <ul>
+                <li>遗传学、进化、生态学、生理学 </li>
+            </ul>
+            <span class="list-title">毕业去向:</span>
+            <ul>
+                <li>教育科普、实验室技术员、研究生 </li>
+            </ul>
+            <div class="badge-group">
+                <span class="badge badge-ok">✔ 兴趣广泛、想为医学打基础 </span>
+                <span class="badge badge-no">❌ 追求本科高薪就业 </span>
+            </div>
+        </div>
+
+        <div class="detail-box">
+            <h3>Biochemistry (生物化学)</h3>
+            <span class="list-title">核心课程:</span>
+            <ul>
+                <li>蛋白质结构、酶反应、代谢通路 </li>
+            </ul>
+            <span class="list-title">毕业去向:</span>
+            <ul>
+                <li>制药公司、生物医药研发、医学深造 </li>
+            </ul>
+            <div class="badge-group">
+                <span class="badge badge-ok">✔ 数理化不错、喜欢精确机制 </span>
+                <span class="badge badge-no">❌ 讨厌化学 </span>
+            </div>
+        </div>
+
+        <div class="detail-box">
+            <h3>Cell & Molecular Biology (细胞与分子)</h3>
+            <span class="list-title">核心课程:</span>
+            <ul>
+                <li>DNA/RNA调控、信号转导、基因表达 </li>
+            </ul>
+            <span class="list-title">毕业去向:</span>
+            <ul>
+                <li>生物医药研发、PhD科研路线 [cite: 10]</li>
+            </ul>
+            <div class="badge-group">
+                <span class="badge badge-ok">✔ 有耐心、坚定科研方向 </span>
+                <span class="badge badge-no">❌ 急功近利 </span>
+            </div>
+        </div>
+
+        <div class="detail-box">
+            <h3>Molecular Biotechnology (分子生物技术)</h3>
+            <span class="list-title">核心课程:</span>
+            <ul>
+                <li>基因工程、生物制药、转化医学 </li>
+            </ul>
+            <span class="list-title">毕业去向:</span>
+            <ul>
+                <li>医疗技术公司、生物技术初创、产业开发 </li>
+            </ul>
+            <div class="badge-group">
+                <span class="badge badge-ok">✔ 喜欢产品转化、有创业兴趣 </span>
+                <span class="badge badge-no">❌ 追求纯粹深度学术 </span>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">核心维度对比表 [cite: 11]</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>维度</th>
+                    <th>Biology</th>
+                    <th>Biochemistry</th>
+                    <th>Cell & Molecular</th>
+                    <th>Biotechnology</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>抽象程度</td>
+                    <td>中</td>
+                    <td>高 [cite: 13]</td>
+                    <td>很高 [cite: 14]</td>
+                    <td>中 [cite: 15]</td>
+                </tr>
+                <tr>
+                    <td>化学含量</td>
+                    <td>低</td>
+                    <td>很高 [cite: 17]</td>
+                    <td>中 [cite: 18]</td>
+                    <td>中 [cite: 19]</td>
+                </tr>
+                <tr>
+                    <td>实验强度</td>
+                    <td>中</td>
+                    <td>高 [cite: 21]</td>
+                    <td>很高 [cite: 22]</td>
+                    <td>高 [cite: 23]</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td>产业导向</td>
+                    <td>低</td>
+                    <td>中 [cite: 25]</td>
+                    <td>中 [cite: 26]</td>
+                    <td>高 [cite: 27]</td>
+                </tr>
+                <tr>
+                    <td>本科就业力</td>
+                    <td>弱 </td>
+                    <td>中 [cite: 29]</td>
+                    <td>中 [cite: 30]</td>
+                    <td>相对强 [cite: 31]</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="advice-box">
+        <h2>非常现实的选专业建议 [cite: 35]</h2>
+        <div class="advice-item">👉 不确定未来方向？ <span>Biochemistry > Biology</span> [cite: 35]</div>
+        <div class="advice-item">👉 确定要做科研/PhD？ <span>Cell & Molecular Biology</span> [cite: 35]</div>
+        <div class="advice-item">👉 想“更靠近工作”？ <span>Molecular Biotechnology</span> [cite: 35]</div>
+    </div>
+
+    <footer>
+        最后一句话：Biology 是“广”，Biochemistry 是“硬”，Cell & Molecular 是“深”，Biotechnology 是“用”。 
+    </footer>
+</div>
+
+</body>
+</html>

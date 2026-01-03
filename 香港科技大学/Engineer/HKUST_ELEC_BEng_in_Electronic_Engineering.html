@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HKUST｜BEng in Electronic Engineering｜十一项详解（单列版）</title>
+  <style>
+:root{
+  --brand:#0b6fb8;
+  --brand2:#1a8fd6;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --text:#1f2a37;
+  --muted:#6b7280;
+  --border:#e6edf6;
+  --shadow:0 10px 25px rgba(15, 23, 42, 0.06);
+  --radius:16px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:28px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text);
+}
+a{color:var(--brand); text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:980px; margin:0 auto}
+header{
+  background:linear-gradient(90deg,var(--brand),var(--brand2));
+  color:#fff; border-radius:20px; padding:22px 22px 18px 22px;
+  box-shadow:var(--shadow);
+}
+h1{margin:0; font-size:22px; letter-spacing:.2px}
+.subtitle{margin-top:8px; font-size:13px; opacity:.95; line-height:1.55}
+.badges{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+.badge{
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.24);
+  padding:6px 10px; border-radius:999px;
+  font-size:12px;
+  backdrop-filter: blur(6px);
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:18px 18px 16px 18px;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+  margin-top:14px;
+}
+.card h2{
+  margin:0 0 10px 0;
+  font-size:16px;
+  display:flex; align-items:center; gap:10px;
+}
+.num{
+  width:28px; height:28px; border-radius:10px;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:#eaf4ff; color:var(--brand); font-weight:700;
+  border:1px solid #d9ecff;
+  flex:0 0 auto;
+}
+.p{margin:0; color:var(--text); line-height:1.75; font-size:13.5px}
+ul{margin:10px 0 0 18px; padding:0; color:var(--text); line-height:1.75; font-size:13.5px}
+li{margin:6px 0}
+.muted{color:var(--muted)}
+.mini{
+  background:#fbfdff;
+  border:1px dashed #dfeaf6;
+  border-radius:14px;
+  padding:12px 12px 10px 12px;
+  margin-top:10px;
+}
+.mini h3{margin:0 0 6px 0; font-size:13.5px}
+.mini p{margin:0; font-size:13px; line-height:1.7; color:var(--text)}
+.callout{
+  border-left:4px solid var(--brand);
+  background:#f2f8ff;
+  border-radius:12px;
+  padding:10px 12px;
+  margin-top:10px;
+  font-size:13px; line-height:1.7;
+}
+.table{
+  width:100%; border-collapse:separate; border-spacing:0;
+  margin-top:10px; font-size:13px;
+  overflow:hidden; border-radius:14px;
+  border:1px solid var(--border);
+}
+.table th, .table td{
+  padding:10px 10px; vertical-align:top; line-height:1.6;
+  border-bottom:1px solid var(--border);
+}
+.table th{background:#f8fbff; text-align:left; color:#334155; font-weight:700}
+.table tr:last-child td{border-bottom:none}
+footer{
+  margin-top:16px; padding:14px 16px;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background:#ffffff;
+  color:var(--muted);
+  font-size:12px; line-height:1.65;
+}
+.one-liner{
+  font-size:15px; font-weight:800; color:#0f172a;
+  background:linear-gradient(90deg,#eaf4ff,#ffffff);
+  border:1px solid #d9ecff;
+  padding:12px 14px; border-radius:16px;
+}
+.smalltag{display:inline-block; font-size:12px; color:#0f172a; background:#eef6ff; border:1px solid #d9ecff; padding:4px 8px; border-radius:999px; margin-right:6px; margin-top:6px;}
+
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin:0 0 14px 0}
+.navbtn{display:inline-block;background:#eaf3ff;border:1px solid #d7e6ff;color:#0b6fb8;padding:10px 14px;border-radius:12px;
+font-size:15px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.navbtn:hover{text-decoration:underline}
+.navbtn.disabled{opacity:.55;cursor:not-allowed}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="navlinks"><a class="navbtn" href="../index.html">返回上一级</a><a class="navbtn" href="../../index.html">返回总目录</a></div><header>
+      <h1>香港科技大学（HKUST）｜BEng in Electronic Engineering（电子工程）——十一项详解</h1>
+      <div class="subtitle">从“信号→电路→系统”训练你把物理世界的信息变成可处理、可通信、可控制的电子系统；典型方向包括通信与信号处理、嵌入式与系统、电力电子与能源电子、传感与成像等。</div>
+      <div class="badges"><div class="badge">信号与系统 + 电路</div>
+<div class="badge">通信/嵌入式/电力电子等方向</div>
+<div class="badge">硬件-软件协同</div>
+<div class="badge">实验室与项目强</div></div>
+    </header>
+    
+    <section class="card">
+      <h2><span class="num">1</span>该专业是什么</h2>
+      
+<p class="p"><b>Electronic Engineering</b> 面向“信息与能量在电路与系统中如何流动”：你学习信号与系统、电路与电子学、通信/控制/嵌入式等，把现实世界的信号变成可处理、可通信、可控制的电子系统。</p><div class="callout">一句话：<b>把信号变成系统</b>——用电路与算法实现通信、控制与智能硬件。</div>
+
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">2</span>该专业学什么</h2>
+      
+<p class="p">学习内容以三段式推进：</p><ul>
+  <li><b>理论底座</b>：信号与系统、电磁/器件基础。</li>
+  <li><b>电路实现</b>：模拟/数字电路、电子电路与实验调试。</li>
+  <li><b>系统应用</b>：通信/嵌入式/控制/电力电子等方向专题。</li>
+</ul><div class="mini"><h3>电子工程的“手感”</h3><p>你会大量做实验与调试：把纸面电路变成能稳定工作的板子/系统。</p></div>
+
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">3</span>该专业适合什么样的人</h2>
+      
+<ul>
+  <li><b>喜欢动手与调试</b>：愿意跟硬件、波形、噪声与bug长期相处。</li>
+  <li><b>对信号/通信/嵌入式有兴趣</b>：喜欢“看得到效果”的系统。</li>
+  <li><b>数理基础扎实</b>：信号系统与电路需要数学直觉。</li>
+</ul><div class="callout">如果你更想做芯片器件/IC，MEIC更合适；如果你更想做软硬件协同与体系结构，CPEG更合适。</div>
+
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">4</span>该专业通常会做什么项目</h2>
+      <p class="p">不同专业的项目主题会不同，但项目形态大多落在以下四类（你越早开始做，成长越快）：</p><ul>
+  <li><b>课程项目：</b>用课程学到的模型/工具做小型可复现项目（仿真、设计计算、实验数据分析、原型搭建）。</li>
+  <li><b>团队设计项目：</b>围绕明确需求做指标定义、方案比较、迭代测试与最终展示。</li>
+  <li><b>研究/论文型项目（Thesis/Research Option）：</b>进入导师团队做更深入的问题，训练科研方法与写作汇报。</li>
+  <li><b>工业/合作项目（Industrial / Co-op）：</b>对接真实场景，强调交付质量、工程约束与沟通。</li>
+</ul><div class="mini"><h3>本专业常见项目主题（示例）</h3><p>信号处理：滤波、谱分析、通信链路仿真与实现； 嵌入式系统：传感器采集、实时控制、边缘计算原型； 电路设计：模拟/数字电路设计、PCB与调试； 通信系统：调制解调、误码率评估、无线系统实验； 电子系统集成：硬件+固件+上位机/APP，完整闭环演示</p></div>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">5</span>该专业需要掌握的主要技能</h2>
+      <table class="table"><tr><th>技能域</th><th>你要能做到什么（越往后越重要）</th></tr><tr><td><b>数学与信号系统</b></td><td>傅里叶/拉普拉斯、系统建模、采样与噪声。</td></tr><tr><td><b>电路与硬件</b></td><td>模拟/数字电路、器件特性、测量与调试能力。</td></tr><tr><td><b>嵌入式与编程</b></td><td>C/C++、MCU/FPGA入门、实时与接口协议。</td></tr><tr><td><b>实验能力</b></td><td>示波器/频谱仪等仪器使用、实验记录与复现。</td></tr><tr><td><b>系统集成</b></td><td>把硬件、固件、算法、通信与应用层串起来。</td></tr></table><div class="callout">最快的提升方式：<b>把课程知识转成作品集</b>（项目/科研/实习），让能力“可展示、可验证”。</div>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">6</span>该专业需要学习哪些基础课</h2>
+      <p class="p">下面是该方向通常会遇到的“基础课底座”（不同学生/路径会有加速或替代）：</p><ul>
+  <li><b>微积分/物理（电磁/波动相关）：</b>微积分/物理（电磁/波动相关）</li>
+  <li><b>信号与系统（核心）：</b>信号与系统（核心）</li>
+  <li><b>电路基础与电子电路（核心）：</b>电路基础与电子电路（核心）</li>
+  <li><b>计算机组织/嵌入式基础（常见）：</b>计算机组织/嵌入式基础（常见）</li>
+  <li><b>高年级专题：</b>通信/控制/电力电子/芯片等</li>
+</ul><p class="p"><span class='muted'>提示：具体到“课程号/学分/先修”请以 ugadmin PDF 为准；我在页面底部放了官方链接。</span></p>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">7</span>该专业未来的就业岗位及薪酬范围及各岗位受AI影响的冲击</h2>
+      <p class="p">下面按“常见岗位 → 典型薪酬范围（香港，月薪，约） → AI 冲击点”来写，便于你直观看到：哪些岗位更容易被自动化、哪些岗位反而会因 AI 更值钱。</p><div class="callout"><b>薪酬说明：</b>为方便横向比较，这里以<strong>香港</strong>的“毕业~1-3年”常见区间做近似；具体会受行业（政府/咨询/金融/互联网/半导体/新能源）、公司体量、IANG/身份、项目经验、语言与证书等影响。</div><table class="table"><tr><th>岗位</th><th>薪酬范围（HK$/月，约）</th><th>AI 冲击/变化（你需要补上的能力）</th></tr><tr><td><b>电子工程师（硬件/系统）</b></td><td>HK$23k–40k</td><td>原理图/文档辅助更强；但<b>电路调试、EMI/可靠性</b>高度依赖经验。</td></tr><tr><td><b>嵌入式工程师（偏硬件接口）</b></td><td>HK$24k–45k</td><td>代码生成提效；关键是<b>时序/协议、实时性、调试与硬件约束</b>。</td></tr><tr><td><b>通信/信号处理工程（初级）</b></td><td>HK$25k–45k</td><td>部分算法模块商品化；差异化在<b>系统级指标、测试与工程实现</b>。</td></tr><tr><td><b>测试/验证工程（电子）</b></td><td>HK$22k–38k</td><td>自动测试更智能；你要懂<b>测试策略、覆盖率、失效分析</b>。</td></tr><tr><td><b>FAE/应用工程（电子元件/设备）</b></td><td>HK$25k–45k</td><td>资料生成更快；核心是<b>客户问题定位、方案配置与沟通</b>。</td></tr></table><p class="p muted">提示：AI 更容易替代“可被标准化的文档/报表/代码片段/重复算图”，但很难替代“对现场与约束负责的工程判断、跨团队沟通、验收与合规责任”。</p>
+    </section>
+
+
+    
+
+
+    <section class="card">
+      <h2><span class="num">8</span>与相近方向对比</h2>
+      <p class="p">下面用“你更在意什么”来快速对比相近方向（帮助你选专业/选路线）：</p><table class="table"><tr><th>相近方向</th><th>关键差异（怎么选）</th></tr><tr><td><b>Microelectronics & IC（MEIC）</b></td><td>MEIC更聚焦半导体物理、制程与IC；ELEC更广：信号/系统/通信/嵌入式等。</td></tr><tr><td><b>Computer Engineering（CPEG）</b></td><td>CPEG更靠近计算机体系结构与嵌入式软件；ELEC更靠近信号、电路与电子系统。</td></tr><tr><td><b>Mechanical Engineering</b></td><td>MECH更偏机械与机电系统；ELEC更偏电路与信息系统。</td></tr></table>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">9</span>一句话总结</h2>
+      <div class='one-liner'>一句话总结：从“信号→电路→系统”训练你把物理世界的信息变成可处理、可通信、可控制的电子系统。</div><p class="p"><span class='muted'>如果你告诉我你更偏向“做产品/做科研/做管理/想去什么行业”，我可以在同模板下再给你写一份“选课+项目+实习”的四年路线图。</span></p>
+    </section>
+
+
+    <section class="card">
+      <h2><span class="num">10</span>该专业四年课程设置</h2>
+      <p class="p">下面给出一份<strong>面向能力成长</strong>的“典型四年路径”（更接近你实际的学习体验）。不同同学会因：入学分流、荣誉/加速数学、交换、实习、研究选项而有所差异。</p><table class="table"><tr><th>学年</th><th>你在“练什么”</th><th>代表性课程类型（示例）</th><th>阶段性产出/项目</th></tr><tr><td><b>大一</b></td><td>数理与电子直觉：电路/编程起步</td><td>微积分/物理、电子导论、编程与工程导论</td><td>小项目：做一个传感采集/简单电路原型</td></tr><tr><td><b>大二</b></td><td>核心链条：信号与系统 + 电路系统化</td><td>信号与系统、电路、电子电路、基础实验课</td><td>课程项目：通信或信号处理小系统</td></tr><tr><td><b>大三</b></td><td>分方向深化：通信/嵌入式/电力电子/传感等</td><td>通信原理、嵌入式系统、控制/电力电子等选修</td><td>团队项目：可演示电子系统（硬件+软件）</td></tr><tr><td><b>大四</b></td><td>整合交付：毕业设计/论文/工业项目</td><td>Final Year Project/Thesis + 高级选修</td><td>作品集：完整系统demo + 技术报告</td></tr></table><div class="callout">做法建议：把每一年都至少产出<strong>1个可展示成果</strong>（项目/论文/竞赛/实习成果）。到申请研究生或找工作时，你会非常省力。</div>
+    </section>
+
+    <footer>
+      <b>信息来源（官方页面，便于你核对与追踪更新）：</b><br/>
+      1) ugadmin｜ELEC 课程要求 PDF（2024-25）：<a href="https://ugadmin.hkust.edu.hk/prog_crs/ug/202425/pdf/24-25elec.pdf" target="_blank" rel="noopener">https://ugadmin.hkust.edu.hk/prog_crs/ug/202425/pdf/24-25elec.pdf</a><br/>
+2) HKUST Program & Course Catalog｜ELEC：<a href="https://prog-crs.hkust.edu.hk/ugprog/2024-25/ELEC" target="_blank" rel="noopener">https://prog-crs.hkust.edu.hk/ugprog/2024-25/ELEC</a><br/>
+3) HKUST ECE（部门信息）：<a href="https://ece.hkust.edu.hk/" target="_blank" rel="noopener">https://ece.hkust.edu.hk/</a><br/>
+      <span class="muted">注：课程编码/课程名会随学年微调；“四年课程设置”给的是<strong>按能力与课程类型组织的典型路径</strong>，你应以当年 HKUST Program & Course Catalog / ugadmin PDF 为准。</span>
+    <br/><br/>
+<b>薪酬参考（区间会随市场变化）：</b><br/>
+1) JobsDB｜Engineer salary（HK$25k–35k/月）：<a href="https://hk.jobsdb.com/career-advice/role/engineer/salary" target="_blank" rel="noopener">https://hk.jobsdb.com/career-advice/role/engineer/salary</a><br/>
+2) JobsDB｜Data Scientist salary（HK$34k–44k/月）：<a href="https://hk.jobsdb.com/career-advice/role/data-scientist/salary" target="_blank" rel="noopener">https://hk.jobsdb.com/career-advice/role/data-scientist/salary</a><br/>
+3) Indeed｜Software Engineer salary（香港，HK$26,709/月）：<a href="https://hk.indeed.com/career/software-engineer/salaries" target="_blank" rel="noopener">https://hk.indeed.com/career/software-engineer/salaries</a><br/>
+4) JobsDB｜Mechanical Engineer salary（HK$23k–31k/月）：<a href="https://hk.jobsdb.com/career-advice/role/mechanical-engineer/salary" target="_blank" rel="noopener">https://hk.jobsdb.com/career-advice/role/mechanical-engineer/salary</a><br/>
+5) Levels.fyi｜Entry Level Software Engineer（HK，总包）：<a href="https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/hong-kong-hkg" target="_blank" rel="noopener">https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/hong-kong-hkg</a>
+</footer>
+  </div>
+</body>
+</html>

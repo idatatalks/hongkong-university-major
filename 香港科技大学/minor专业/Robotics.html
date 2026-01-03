@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics（机器人学）专业详尽介绍</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.4em;
+            margin-bottom: 40px;
+            border-bottom: 4px solid #e74c3c;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #c0392b;
+            font-size: 1.8em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border-left: 5px solid #e74c3c;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #e67e22;
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            padding-left: 30px;
+            margin: 20px 0;
+        }
+        li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        tr:nth-child(even) {
+            background-color: #fdf2f2;
+        }
+        tr:hover {
+            background-color: #fce8e8;
+            transition: background-color 0.3s;
+        }
+        .highlight {
+            background-color: #fffacd;
+            padding: 15px;
+            border-left: 5px solid #f1c40f;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+        .section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #eee;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table, th, td {
+                font-size: 0.95em;
+            }
+        }
+    
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start;margin:0 0 14px 0}
+.navbtn{display:inline-block;background:#eaf3ff;border:1px solid #d7e6ff;color:#0b6fb8;padding:10px 14px;border-radius:12px;
+font-size:15px;font-weight:800;letter-spacing:.2px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.navbtn:hover{text-decoration:underline}
+.navbtn.disabled{opacity:.55;cursor:not-allowed}
+</style>
+</head>
+<body><div class="navlinks"><a class="navbtn" href="../index.html">返回上一级</a><a class="navbtn" href="../../index.html">返回总目录</a></div><div class="container">
+        <h1>Robotics（机器人学）专业详尽介绍</h1>
+
+        <div class="section">
+            <h2>一、什么是 Robotics？（一句话本质）</h2>
+            <p><strong>Robotics = 机械工程 + 电子工程 + 计算机 + AI 的高度融合</strong></p>
+            <p>机器人学研究的是：<br>如何让“机器”感知世界、做出决策，并在现实世界中可靠地行动。</p>
+            <p><strong>关键词：</strong><br>感知（Sensors）– 决策（AI）– 控制（Control）– 执行（Actuators）</p>
+        </div>
+
+        <div class="section">
+            <h2>二、Robotics 学什么？（非常具体）</h2>
+
+            <h3>1️⃣ 数学与工程基础（硬核部分）</h3>
+            <ul>
+                <li>线性代数（坐标变换、旋转矩阵）</li>
+                <li>微积分 & 微分方程</li>
+                <li>概率统计（不确定性建模）</li>
+                <li>工程数学</li>
+            </ul>
+            <p>📌 这是很多人觉得 Robotics “难”的根源</p>
+
+            <h3>2️⃣ 机械与硬件基础</h3>
+            <ul>
+                <li>机械设计</li>
+                <li>刚体动力学</li>
+                <li>机器人机构学（Kinematics）</li>
+                <li>电机与驱动系统</li>
+                <li>传感器（IMU、LiDAR、Camera）</li>
+            </ul>
+            <p>📌 你要理解：机器人身体怎么动</p>
+
+            <h3>3️⃣ 控制系统（Robotics 的灵魂之一）</h3>
+            <ul>
+                <li>控制理论（PID、状态空间）</li>
+                <li>运动控制</li>
+                <li>轨迹规划</li>
+                <li>实时系统</li>
+            </ul>
+            <p>📌 决定机器人稳不稳、准不准、快不快</p>
+
+            <h3>4️⃣ 编程与软件系统</h3>
+            <ul>
+                <li>C / C++</li>
+                <li>Python</li>
+                <li>ROS（Robot Operating System）</li>
+                <li>嵌入式系统</li>
+                <li>实时操作系统（RTOS）</li>
+            </ul>
+            <p>📌 Robotics 程序 ≠ Web 编程<br>📌 更接近底层与系统级</p>
+
+            <h3>5️⃣ AI 与感知（现代 Robotics 的核心）</h3>
+            <ul>
+                <li>计算机视觉</li>
+                <li>机器学习</li>
+                <li>深度学习</li>
+                <li>SLAM（同步定位与建图）</li>
+                <li>多传感器融合</li>
+            </ul>
+            <p>📌 这是 Robotics 与 AI 强烈交汇的地方</p>
+        </div>
+
+        <div class="section">
+            <h2>三、Robotics 适合什么样的人？</h2>
+            <p><strong>✅ 非常适合你，如果你：</strong></p>
+            <ul>
+                <li>喜欢 动手 + 思考</li>
+                <li>对真实世界的系统感兴趣（不是只在屏幕里）</li>
+                <li>能接受数学和工程难度</li>
+                <li>喜欢“系统级问题”</li>
+                <li>对无人机、自动驾驶、医疗机器人、工业机器人感兴趣</li>
+            </ul>
+            <p><strong>❌ 不太适合你，如果你：</strong></p>
+            <ul>
+                <li>极度讨厌物理、电路、机械</li>
+                <li>只想写 App / 网站</li>
+                <li>不喜欢调试硬件（非常重要）</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>四、典型课程结构（本科 / 硕士）</h2>
+
+            <h3>📘 基础核心</h3>
+            <ul>
+                <li>Engineering Mathematics</li>
+                <li>Linear Algebra</li>
+                <li>Signals and Systems</li>
+                <li>Probability</li>
+            </ul>
+
+            <h3>📘 Robotics 核心</h3>
+            <ul>
+                <li>Robotics: Kinematics & Dynamics</li>
+                <li>Control Systems</li>
+                <li>Robot Perception</li>
+                <li>Motion Planning</li>
+                <li>Embedded Systems</li>
+            </ul>
+
+            <h3>📘 AI & 高级</h3>
+            <ul>
+                <li>Computer Vision</li>
+                <li>Machine Learning</li>
+                <li>Autonomous Systems</li>
+                <li>Human-Robot Interaction</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>五、毕业后做什么工作？（非常重要）</h2>
+            <ul>
+                <li><strong>1️⃣ Robotics Engineer</strong><br>做什么：设计与调试机器人系统、软硬件集成、控制算法实现<br>性格：耐心强、喜欢解决复杂系统问题</li>
+                <li><strong>2️⃣ Autonomous Systems Engineer（自动驾驶 / 无人系统）</strong><br>领域：自动驾驶汽车、无人机、无人船<br>工作内容：感知算法、SLAM、决策与控制<br>📌 非常热门方向</li>
+                <li><strong>3️⃣ Computer Vision Engineer（机器人方向）</strong><br>视觉识别、3D 重建、传感器融合<br>📌 Robotics + AI 的高薪交汇点</li>
+                <li><strong>4️⃣ Control Engineer</strong><br>工业自动化、机器人控制、高精度运动系统<br>📌 非常稳定、难被替代</li>
+                <li><strong>5️⃣ Research / PhD 路径</strong><br>学术研究、前沿机器人实验室、医疗 / 仿生机器人</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>六、薪资与就业前景（概念性）</h2>
+            <table>
+                <tr>
+                    <th>维度</th>
+                    <th>Robotics</th>
+                </tr>
+                <tr>
+                    <td>起薪</td>
+                    <td>中高</td>
+                </tr>
+                <tr>
+                    <td>上限</td>
+                    <td>非常高</td>
+                </tr>
+                <tr>
+                    <td>稳定性</td>
+                    <td>高</td>
+                </tr>
+                <tr>
+                    <td>地域集中</td>
+                    <td>高（科技城市）</td>
+                </tr>
+            </table>
+            <p>📌 工业、医疗、自动驾驶领域需求长期存在</p>
+        </div>
+
+        <div class="section">
+            <h2>七、AI 会不会“干掉”Robotics？</h2>
+            <p>不会，恰恰相反：</p>
+            <ul>
+                <li>AI 让机器人更“聪明”</li>
+                <li>但机器人仍需要：<br>硬件理解<br>实时控制<br>安全与可靠性</li>
+            </ul>
+            <p>📌 纯软件易被 AI 替代，物理世界很难</p>
+        </div>
+
+        <div class="section">
+            <h2>八、Robotics vs 相近专业（一眼区分）</h2>
+            <table>
+                <tr>
+                    <th>专业</th>
+                    <th>重点</th>
+                </tr>
+                <tr>
+                    <td>Robotics</td>
+                    <td>系统级智能机器</td>
+                </tr>
+                <tr>
+                    <td>Mech Eng</td>
+                    <td>机械结构</td>
+                </tr>
+                <tr>
+                    <td>EE</td>
+                    <td>电路与信号</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>软件与算法</td>
+                </tr>
+                <tr>
+                    <td>AI</td>
+                    <td>数据与模型</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="highlight">
+            <strong>九、一句话终极总结</strong><br>
+            Robotics 是把“智能”带进现实世界的学科，是最难、但也最有长期价值的工程方向之一。
+        </div>
+
+        <p style="text-align: center; margin-top: 50px; font-size: 1.1em;">
+            如果你愿意，我可以：<br>
+            帮你判断 你更适合 Robotics 还是 AI / CS / Mechatronics<br>
+            对比 港科大 / 港大 / 中大 / 美国大学的 Robotics 路线<br>
+            帮你规划 从本科 → 实习 → 研究生 / 就业的路径<br><br>
+            你更感兴趣的是：<br>
+            👉 自动驾驶 / 无人机 / 医疗机器人 / 工业机器人 哪一个方向？
+        </p>
+    </div>
+</body>
+</html>
